@@ -16,26 +16,38 @@ namespace ProjecteGrup
         {
             InitializeComponent();
         }
+         String nombreSuperUser = "JosepGuiu";
+         String contra = "josepguiusilles";
 
         private void buttonSignup_Click(object sender, EventArgs e)
         {
             if(textBoxUser.Text.Equals("") ||  textBoxPassword.Text.Equals(""))
             {
+                MessageBox.Show("Debes poner un nombre y una contraseña", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                pictureBoxExclamacion1.Visible = true;
+                pictureBoxExclamacion2.Visible = true;
+                pictureBoxExclamacion3.Visible = true;
+                labelError.Visible = true;
+            }else if (!textBoxUser.Text.Equals(nombreSuperUser) && !textBoxPassword.Text.Equals(contra)) {
+                MessageBox.Show("El nombre de usuario o contraseña no es correcto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 pictureBoxExclamacion1.Visible = true;
                 pictureBoxExclamacion2.Visible = true;
                 pictureBoxExclamacion3.Visible = true;
                 labelError.Visible = true;
             }
-            else
+            if (textBoxUser.Text.Equals(nombreSuperUser) && textBoxPassword.Text.Equals(contra))
             {
-                MenuAdmin menuAdmin = new MenuAdmin();
-                menuAdmin.ShowDialog();
-
+                MessageBox.Show("Bienvenido, " + textBoxUser.Text, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 pictureBoxExclamacion1.Visible = false;
                 pictureBoxExclamacion2.Visible = false;
                 pictureBoxExclamacion3.Visible = false;
                 labelError.Visible = false;
+                textBoxUser.Text = "";
+                textBoxPassword.Text = "";
+                MenuAdmin a = new MenuAdmin();
+                a.ShowDialog();
             }
+            
         }
 
         private void LoginAdmin_Load(object sender, EventArgs e)

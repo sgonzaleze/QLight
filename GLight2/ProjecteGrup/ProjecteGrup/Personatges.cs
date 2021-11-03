@@ -28,5 +28,10 @@ namespace ProjecteGrup
             ma.ShowDialog();
 
         }
+
+        private void Personatges_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

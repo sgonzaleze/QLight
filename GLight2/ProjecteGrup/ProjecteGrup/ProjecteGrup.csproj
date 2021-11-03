@@ -64,6 +64,12 @@
     <Compile Include="LoginAdmin.Designer.cs">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuAdminBasico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuAdminBasico.Designer.cs">
+      <DependentUpon>MenuAdminBasico.cs</DependentUpon>
+    </Compile>
     <Compile Include="Personatges.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginAdmin.resx">
       <DependentUpon>LoginAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAdminBasico.resx">
+      <DependentUpon>MenuAdminBasico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Personatges.resx">
       <DependentUpon>Personatges.cs</DependentUpon>

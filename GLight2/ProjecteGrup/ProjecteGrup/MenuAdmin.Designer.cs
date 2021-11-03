@@ -31,11 +31,12 @@ namespace ProjecteGrup
         {
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.menuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salirToolStripMenuItemPrimero = new System.Windows.Forms.ToolStripMenuItem();
             this.juegoToolStripMenuItemPrimero = new System.Windows.Forms.ToolStripMenuItem();
             this.personajesToolStripMenuItemPrimero = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosDeGestionToolStripMenuItemPrimero = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItemPrimero = new System.Windows.Forms.ToolStripMenuItem();
+            this.cerrarSesionToolStripMenuItemPrimer = new System.Windows.Forms.ToolStripMenuItem();
             this.labelUsuario = new System.Windows.Forms.Label();
             this.labelInicioSesion = new System.Windows.Forms.Label();
             this.labelUser = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@ namespace ProjecteGrup
             this.buttonAceptarAdmins = new System.Windows.Forms.Button();
             this.groupBoxOpciones = new System.Windows.Forms.GroupBox();
             this.buttonCerrarSesion = new System.Windows.Forms.Button();
-            this.cerrarSesionToolStripMenuItemPrimer = new System.Windows.Forms.ToolStripMenuItem();
             this.buttonSalir = new System.Windows.Forms.Button();
             this.menuStrip2.SuspendLayout();
             this.groupBoxOpciones.SuspendLayout();
@@ -76,22 +76,6 @@ namespace ProjecteGrup
             this.menuToolStripMenuItem1.Size = new System.Drawing.Size(50, 20);
             this.menuToolStripMenuItem1.Text = "Menu";
             // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salirToolStripMenuItemPrimero,
-            this.cerrarSesionToolStripMenuItemPrimer});
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
-            this.salirToolStripMenuItem.Text = "Salir";
-            // 
-            // salirToolStripMenuItemPrimero
-            // 
-            this.salirToolStripMenuItemPrimero.Name = "salirToolStripMenuItemPrimero";
-            this.salirToolStripMenuItemPrimero.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.salirToolStripMenuItemPrimero.Size = new System.Drawing.Size(180, 22);
-            this.salirToolStripMenuItemPrimero.Text = "Salir";
-            // 
             // juegoToolStripMenuItemPrimero
             // 
             this.juegoToolStripMenuItemPrimero.Name = "juegoToolStripMenuItemPrimero";
@@ -112,6 +96,29 @@ namespace ProjecteGrup
             this.usuariosDeGestionToolStripMenuItemPrimero.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D3)));
             this.usuariosDeGestionToolStripMenuItemPrimero.Size = new System.Drawing.Size(213, 22);
             this.usuariosDeGestionToolStripMenuItemPrimero.Text = "Usuarios de gestión";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.salirToolStripMenuItemPrimero,
+            this.cerrarSesionToolStripMenuItemPrimer});
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Text = "Salir";
+            // 
+            // salirToolStripMenuItemPrimero
+            // 
+            this.salirToolStripMenuItemPrimero.Name = "salirToolStripMenuItemPrimero";
+            this.salirToolStripMenuItemPrimero.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
+            this.salirToolStripMenuItemPrimero.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItemPrimero.Text = "Salir";
+            // 
+            // cerrarSesionToolStripMenuItemPrimer
+            // 
+            this.cerrarSesionToolStripMenuItemPrimer.Name = "cerrarSesionToolStripMenuItemPrimer";
+            this.cerrarSesionToolStripMenuItemPrimer.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
+            this.cerrarSesionToolStripMenuItemPrimer.Size = new System.Drawing.Size(180, 22);
+            this.cerrarSesionToolStripMenuItemPrimer.Text = "Cerrar sesión";
             // 
             // labelUsuario
             // 
@@ -225,7 +232,7 @@ namespace ProjecteGrup
             this.groupBoxOpciones.Controls.Add(this.labelAvatar);
             this.groupBoxOpciones.Location = new System.Drawing.Point(15, 84);
             this.groupBoxOpciones.Name = "groupBoxOpciones";
-            this.groupBoxOpciones.Size = new System.Drawing.Size(436, 208);
+            this.groupBoxOpciones.Size = new System.Drawing.Size(435, 208);
             this.groupBoxOpciones.TabIndex = 14;
             this.groupBoxOpciones.TabStop = false;
             this.groupBoxOpciones.Text = "Opciones Administrador";
@@ -234,23 +241,16 @@ namespace ProjecteGrup
             // 
             this.buttonCerrarSesion.Location = new System.Drawing.Point(196, 306);
             this.buttonCerrarSesion.Name = "buttonCerrarSesion";
-            this.buttonCerrarSesion.Size = new System.Drawing.Size(77, 23);
+            this.buttonCerrarSesion.Size = new System.Drawing.Size(76, 23);
             this.buttonCerrarSesion.TabIndex = 15;
             this.buttonCerrarSesion.Text = "Cerrar sesión";
             this.buttonCerrarSesion.UseVisualStyleBackColor = true;
-            // 
-            // cerrarSesionToolStripMenuItemPrimer
-            // 
-            this.cerrarSesionToolStripMenuItemPrimer.Name = "cerrarSesionToolStripMenuItemPrimer";
-            this.cerrarSesionToolStripMenuItemPrimer.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
-            this.cerrarSesionToolStripMenuItemPrimer.Size = new System.Drawing.Size(180, 22);
-            this.cerrarSesionToolStripMenuItemPrimer.Text = "Cerrar sesión";
             // 
             // buttonSalir
             // 
             this.buttonSalir.Location = new System.Drawing.Point(376, 32);
             this.buttonSalir.Name = "buttonSalir";
-            this.buttonSalir.Size = new System.Drawing.Size(75, 23);
+            this.buttonSalir.Size = new System.Drawing.Size(74, 23);
             this.buttonSalir.TabIndex = 16;
             this.buttonSalir.Text = "Salir";
             this.buttonSalir.UseVisualStyleBackColor = true;

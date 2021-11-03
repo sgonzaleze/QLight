@@ -19,9 +19,9 @@ namespace ProjecteGrup
 
         private void buttonModificar_Click(object sender, EventArgs e)
         {
-            ModificarPreguntas m = new ModificarPreguntas();
 
-            m.ShowDialog();
+
+   
         }
 
         private void mENUToolStripMenuItem_Click(object sender, EventArgs e)
