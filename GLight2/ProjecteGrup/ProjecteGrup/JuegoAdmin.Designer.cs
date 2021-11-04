@@ -294,6 +294,7 @@ namespace ProjecteGrup
             this.buttonAñadir.TabIndex = 10;
             this.buttonAñadir.Text = "Añadir";
             this.buttonAñadir.UseVisualStyleBackColor = true;
+            this.buttonAñadir.Click += new System.EventHandler(this.buttonAñadir_Click);
             // 
             // labelRespuesta4
             // 
@@ -501,51 +502,51 @@ namespace ProjecteGrup
             // rockToolStripMenuItem
             // 
             this.rockToolStripMenuItem.Name = "rockToolStripMenuItem";
-            this.rockToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.rockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.rockToolStripMenuItem.Text = "Rock and roll";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(140, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
             // 
             // heavyMetalToolStripMenuItem
             // 
             this.heavyMetalToolStripMenuItem.Name = "heavyMetalToolStripMenuItem";
-            this.heavyMetalToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.heavyMetalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.heavyMetalToolStripMenuItem.Text = "Heavy metal";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(140, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
             // 
             // popToolStripMenuItem
             // 
             this.popToolStripMenuItem.Name = "popToolStripMenuItem";
-            this.popToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.popToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.popToolStripMenuItem.Text = "Pop";
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(140, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // rapToolStripMenuItem
             // 
             this.rapToolStripMenuItem.Name = "rapToolStripMenuItem";
-            this.rapToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.rapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.rapToolStripMenuItem.Text = "Rap";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(140, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
             // 
             // funkToolStripMenuItem
             // 
             this.funkToolStripMenuItem.Name = "funkToolStripMenuItem";
-            this.funkToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.funkToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.funkToolStripMenuItem.Text = "Funk";
             // 
             // salirToolStripMenuItem
