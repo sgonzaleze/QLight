@@ -49,5 +49,11 @@ namespace ProjecteGrup
         {
 
         }
+
+        private void buttonAceptarJuego_Click(object sender, EventArgs e)
+        {
+            JuegoAdmin a = new JuegoAdmin();
+            a.ShowDialog();
+        }
     }
 }

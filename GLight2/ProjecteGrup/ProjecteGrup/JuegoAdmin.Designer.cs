@@ -61,11 +61,6 @@ namespace ProjecteGrup
             this.buttonRefrescaLista = new System.Windows.Forms.Button();
             this.buttonEliminar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Pregunta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RespuestaPrimera = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RespuestaSegunda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RespuestaTercera = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RespuestaCuarta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.buttonModificar = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.géneroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,6 +75,11 @@ namespace ProjecteGrup
             this.funkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.Pregunta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RespuestaPrimera = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RespuestaSegunda = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RespuestaTercera = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RespuestaCuarta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxAñadir.SuspendLayout();
             this.groupBoxRespuesta4.SuspendLayout();
             this.groupBoxRespuesta3.SuspendLayout();
@@ -432,36 +432,6 @@ namespace ProjecteGrup
             this.dataGridView1.Size = new System.Drawing.Size(678, 188);
             this.dataGridView1.TabIndex = 4;
             // 
-            // Pregunta
-            // 
-            this.Pregunta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Pregunta.HeaderText = "Pregunta";
-            this.Pregunta.Name = "Pregunta";
-            // 
-            // RespuestaPrimera
-            // 
-            this.RespuestaPrimera.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.RespuestaPrimera.HeaderText = "Respuesta 1";
-            this.RespuestaPrimera.Name = "RespuestaPrimera";
-            // 
-            // RespuestaSegunda
-            // 
-            this.RespuestaSegunda.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.RespuestaSegunda.HeaderText = "Respuesta 2";
-            this.RespuestaSegunda.Name = "RespuestaSegunda";
-            // 
-            // RespuestaTercera
-            // 
-            this.RespuestaTercera.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.RespuestaTercera.HeaderText = "Respuesta 3";
-            this.RespuestaTercera.Name = "RespuestaTercera";
-            // 
-            // RespuestaCuarta
-            // 
-            this.RespuestaCuarta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.RespuestaCuarta.HeaderText = "Respuesta 4";
-            this.RespuestaCuarta.Name = "RespuestaCuarta";
-            // 
             // buttonModificar
             // 
             this.buttonModificar.Location = new System.Drawing.Point(260, 225);
@@ -564,6 +534,41 @@ namespace ProjecteGrup
             this.salirToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.salirToolStripMenuItem1.Text = "Salir";
             // 
+            // Pregunta
+            // 
+            this.Pregunta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Pregunta.DataPropertyName = "PreguntaTexto";
+            this.Pregunta.HeaderText = "Pregunta";
+            this.Pregunta.Name = "Pregunta";
+            // 
+            // RespuestaPrimera
+            // 
+            this.RespuestaPrimera.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.RespuestaPrimera.DataPropertyName = "Texto";
+            this.RespuestaPrimera.HeaderText = "Respuesta 1";
+            this.RespuestaPrimera.Name = "RespuestaPrimera";
+            // 
+            // RespuestaSegunda
+            // 
+            this.RespuestaSegunda.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.RespuestaSegunda.DataPropertyName = "Texto";
+            this.RespuestaSegunda.HeaderText = "Respuesta 2";
+            this.RespuestaSegunda.Name = "RespuestaSegunda";
+            // 
+            // RespuestaTercera
+            // 
+            this.RespuestaTercera.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.RespuestaTercera.DataPropertyName = "Texto";
+            this.RespuestaTercera.HeaderText = "Respuesta 3";
+            this.RespuestaTercera.Name = "RespuestaTercera";
+            // 
+            // RespuestaCuarta
+            // 
+            this.RespuestaCuarta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.RespuestaCuarta.DataPropertyName = "Texto";
+            this.RespuestaCuarta.HeaderText = "Respuesta 4";
+            this.RespuestaCuarta.Name = "RespuestaCuarta";
+            // 
             // JuegoAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -641,11 +646,11 @@ namespace ProjecteGrup
         private System.Windows.Forms.Label labelControl3;
         private System.Windows.Forms.Label labelControl2;
         private System.Windows.Forms.Label labelControl1;
+        private System.Windows.Forms.Button buttonRefrescaLista;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pregunta;
         private System.Windows.Forms.DataGridViewTextBoxColumn RespuestaPrimera;
         private System.Windows.Forms.DataGridViewTextBoxColumn RespuestaSegunda;
         private System.Windows.Forms.DataGridViewTextBoxColumn RespuestaTercera;
         private System.Windows.Forms.DataGridViewTextBoxColumn RespuestaCuarta;
-        private System.Windows.Forms.Button buttonRefrescaLista;
     }
 }

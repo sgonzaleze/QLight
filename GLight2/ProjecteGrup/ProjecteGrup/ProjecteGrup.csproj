@@ -77,8 +77,11 @@
     <Compile Include="Personatges.Designer.cs">
       <DependentUpon>Personatges.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pregunta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Respuesta.cs" />
+    <Compile Include="SuperAdministrador.cs" />
     <EmbeddedResource Include="JuegoAdmin.resx">
       <DependentUpon>JuegoAdmin.cs</DependentUpon>
     </EmbeddedResource>

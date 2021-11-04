@@ -171,9 +171,9 @@ namespace ProjecteGrup
             this.labelJuego.AutoSize = true;
             this.labelJuego.Location = new System.Drawing.Point(34, 50);
             this.labelJuego.Name = "labelJuego";
-            this.labelJuego.Size = new System.Drawing.Size(386, 13);
+            this.labelJuego.Size = new System.Drawing.Size(350, 13);
             this.labelJuego.TabIndex = 8;
-            this.labelJuego.Text = "Opción para la gestión de datos del juego. Aprieta \"ACEPTAR\" para gestionarlo.";
+            this.labelJuego.Text = "Opción para la gestión de datos del juego. \"ACEPTAR\" para gestionarlo.";
             // 
             // buttonAceptarJuego
             // 
@@ -183,16 +183,16 @@ namespace ProjecteGrup
             this.buttonAceptarJuego.TabIndex = 9;
             this.buttonAceptarJuego.Text = "ACEPTAR";
             this.buttonAceptarJuego.UseVisualStyleBackColor = true;
+            this.buttonAceptarJuego.Click += new System.EventHandler(this.buttonAceptarJuego_Click);
             // 
             // labelAvatar
             // 
             this.labelAvatar.AutoSize = true;
             this.labelAvatar.Location = new System.Drawing.Point(34, 105);
             this.labelAvatar.Name = "labelAvatar";
-            this.labelAvatar.Size = new System.Drawing.Size(401, 13);
+            this.labelAvatar.Size = new System.Drawing.Size(365, 13);
             this.labelAvatar.TabIndex = 10;
-            this.labelAvatar.Text = "Opción para la gestión de avatares del juego. Aprieta \"ACEPTAR\" para gestionarlo." +
-    "";
+            this.labelAvatar.Text = "Opción para la gestión de avatares del juego. \"ACEPTAR\" para gestionarlo.";
             // 
             // buttonAceptarAvatar
             // 
@@ -208,9 +208,9 @@ namespace ProjecteGrup
             this.labelAdmins.AutoSize = true;
             this.labelAdmins.Location = new System.Drawing.Point(34, 161);
             this.labelAdmins.Name = "labelAdmins";
-            this.labelAdmins.Size = new System.Drawing.Size(392, 13);
+            this.labelAdmins.Size = new System.Drawing.Size(356, 13);
             this.labelAdmins.TabIndex = 12;
-            this.labelAdmins.Text = "Opción para la gestión de administradores. Aprieta \"ACEPTAR\" para gestionarlos.";
+            this.labelAdmins.Text = "Opción para la gestión de administradores. \"ACEPTAR\" para gestionarlos.";
             // 
             // buttonAceptarAdmins
             // 

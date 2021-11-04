@@ -12,6 +12,7 @@ namespace ProjecteGrup
 {
     public partial class JuegoAdmin : Form
     {
+        BindingList<Pregunta> generoMusical1 = new BindingList<Pregunta>();
         public JuegoAdmin()
         {
             InitializeComponent();
@@ -50,31 +51,36 @@ namespace ProjecteGrup
             bool isTrueRes3 = false;
             bool isTrueRes4 = false;
             List<Respuesta> Respuestas = new List<Respuesta>();
+            Respuesta primera, segunda, tercera, cuarta;
+            Pregunta preguntaConRespuestas;
 
-            if (radioButtonCiertoPrimero.Checked == true)
+            isTrueRes1 = ControlPrimeraRespuesta(isTrueRes1);
+            isTrueRes2 = ControlSegundaRespuesta(isTrueRes2);
+            isTrueRes3 = ControlTerceraRespuesta(isTrueRes3);
+            isTrueRes4 = ControlCuartaPregunta(isTrueRes4);
+            if (isTrueRes1 == false && isTrueRes2 == false && isTrueRes3 == false && isTrueRes4 == false)
             {
-                isTrueRes1 = true;
+                MessageBox.Show("Todas las respuestas son falsas,debe haber una sola correcta", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (radioButtonFalsoPrimero.Checked == true)
+            else if (isTrueRes1 == true && isTrueRes2 == true && isTrueRes3 == true && isTrueRes4 == true)
             {
-                isTrueRes1 = false;
+                MessageBox.Show("Todas las respuestas son ciertas, debe haber una sola correcta y las demás falsas", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (radioButtonCiertoSegundo.Checked == true)
+            else
             {
-                isTrueRes2 = true;
+                primera = ObtenerObjetoRespuesta(respuesta1, isTrueRes1);
+                segunda = ObtenerObjetoRespuesta(respuesta2, isTrueRes2);
+                tercera = ObtenerObjetoRespuesta(respuesta3, isTrueRes3);
+                cuarta = ObtenerObjetoRespuesta(respuesta4, isTrueRes4);
+                Respuestas = AnadirLista(primera, segunda, tercera, cuarta);
+                preguntaConRespuestas = new Pregunta(pregunta, Respuestas);
+                generoMusical1.Add(preguntaConRespuestas);
+                dataGridView1.DataSource = generoMusical1;
             }
-            else if (radioButtonFalsoSegundo.Checked == true)
-            {
-                isTrueRes2 = false;
-            }
-            if (radioButtonCiertoTercero.Checked == true)
-            {
-                isTrueRes3 = true;
-            }
-            else if (radioButtonFalsoTercero.Checked == true)
-            {
-                isTrueRes3 = false;
-            }
+        }
+
+        private bool ControlCuartaPregunta(bool isTrueRes4)
+        {
             if (radioButtonCiertoCuarto.Checked == true)
             {
                 isTrueRes4 = true;
@@ -84,17 +90,72 @@ namespace ProjecteGrup
                 isTrueRes4 = false;
             }
 
-            ObtenerObjetoRespuesta(respuesta1, isTrueRes1);
-            ObtenerObjetoRespuesta(respuesta2, isTrueRes2);
-            ObtenerObjetoRespuesta(respuesta3, isTrueRes3);
-            ObtenerObjetoRespuesta(respuesta4, isTrueRes4);
+            return isTrueRes4;
+        }
 
+        private bool ControlTerceraRespuesta(bool isTrueRes3)
+        {
+            if (radioButtonCiertoTercero.Checked == true)
+            {
+                isTrueRes3 = true;
+            }
+            else if (radioButtonFalsoTercero.Checked == true)
+            {
+                isTrueRes3 = false;
+            }
+
+            return isTrueRes3;
+        }
+
+        private bool ControlSegundaRespuesta(bool isTrueRes2)
+        {
+            if (radioButtonCiertoSegundo.Checked == true)
+            {
+                isTrueRes2 = true;
+            }
+            else if (radioButtonFalsoSegundo.Checked == true)
+            {
+                isTrueRes2 = false;
+            }
+
+            return isTrueRes2;
+        }
+
+        private bool ControlPrimeraRespuesta(bool isTrueRes1)
+        {
+            if (radioButtonCiertoPrimero.Checked == true)
+            {
+                isTrueRes1 = true;
+            }
+            else if (radioButtonFalsoPrimero.Checked == true)
+            {
+                isTrueRes1 = false;
+            }
+
+            return isTrueRes1;
         }
 
         private static Respuesta ObtenerObjetoRespuesta(string respuesta, bool isTrueRes)
         {
             Respuesta respuestaGuardar = new Respuesta(respuesta, isTrueRes);
             return respuestaGuardar;
+        }
+
+        private static List<Respuesta> AnadirLista(Respuesta a, Respuesta b, Respuesta c, Respuesta d)
+        {
+            List<Respuesta> respuestas = new List<Respuesta>();
+            respuestas.Add(a);
+            respuestas.Add(b);
+            respuestas.Add(c);
+            respuestas.Add(d);
+
+            return respuestas;
+        }
+
+        private static Pregunta ObtenerObjetoPregunta(String pregunta, List<Respuesta> respuestas) 
+        {
+            Pregunta preguntaGuardar = new Pregunta(pregunta, respuestas);
+            return preguntaGuardar;
         }
     }
 }

@@ -96,6 +96,7 @@ namespace ProjecteGrup
             this.radioButtonVerPassword.TabStop = true;
             this.radioButtonVerPassword.Text = "Ver";
             this.radioButtonVerPassword.UseVisualStyleBackColor = true;
+            this.radioButtonVerPassword.CheckedChanged += new System.EventHandler(this.radioButtonVerPassword_CheckedChanged);
             // 
             // buttonSignUp
             // 

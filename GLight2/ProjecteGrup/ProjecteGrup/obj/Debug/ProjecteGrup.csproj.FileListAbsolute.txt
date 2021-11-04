@@ -28,3 +28,17 @@ C:\Users\cep.CEPNET0\Desktop\QLight\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\
 C:\Users\cep.CEPNET0\Desktop\QLight\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\ProjecteGrup.exe.config
 C:\Users\cep.CEPNET0\Desktop\QLight\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\ProjecteGrup.exe
 C:\Users\cep.CEPNET0\Desktop\QLight\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\ProjecteGrup.pdb
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\ProjecteGrup.exe.config
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\ProjecteGrup.exe
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\ProjecteGrup.pdb
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.csproj.AssemblyReference.cache
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.JuegoAdmin.resources
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.MenuAdmin.resources
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.LoginAdmin.resources
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.MenuAdminBasico.resources
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.Personatges.resources
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.Properties.Resources.resources
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.csproj.GenerateResource.cache
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.csproj.CoreCompileInputs.cache
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.exe
+C:\Users\cep.CEPNET0\Desktop\Q\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.pdb
