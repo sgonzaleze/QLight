@@ -42,6 +42,8 @@ namespace ProjecteGrup
         private void buttonAñadir_Click(object sender, EventArgs e)
         {
             String pregunta = textBoxPregunta.Text;
+            String gender = "";
+            String dificult = "";
             String respuesta1 = textBoxResposta1.Text;
             String respuesta2 = textBoxResposta2.Text;
             String respuesta3 = textBoxResposta3.Text;
@@ -53,6 +55,10 @@ namespace ProjecteGrup
             List<Respuesta> Respuestas = new List<Respuesta>();
             Respuesta primera, segunda, tercera, cuarta;
             Pregunta preguntaConRespuestas;
+
+            dificult = SeleccionarDificultadPregunta(dificult);
+
+            gender = SeleccionarGenero(gender);
 
             isTrueRes1 = ControlPrimeraRespuesta(isTrueRes1);
             isTrueRes2 = ControlSegundaRespuesta(isTrueRes2);
@@ -73,10 +79,70 @@ namespace ProjecteGrup
                 tercera = ObtenerObjetoRespuesta(respuesta3, isTrueRes3);
                 cuarta = ObtenerObjetoRespuesta(respuesta4, isTrueRes4);
                 Respuestas = AnadirLista(primera, segunda, tercera, cuarta);
-                preguntaConRespuestas = new Pregunta(pregunta, Respuestas);
+                preguntaConRespuestas = new Pregunta(pregunta, Respuestas, dificult, gender);
                 generoMusical1.Add(preguntaConRespuestas);
                 dataGridView1.DataSource = generoMusical1;
+
+                LimpiarFormulario();
             }
+        }
+
+        private void LimpiarFormulario()
+        {
+            textBoxPregunta.Text = "";
+            textBoxResposta1.Text = "";
+            textBoxResposta2.Text = "";
+            textBoxResposta3.Text = "";
+            textBoxResposta4.Text = "";
+        }
+
+        private string SeleccionarGenero(string gender)
+        {
+            if (radioButtonRock.Checked == true)
+            {
+                gender = radioButtonRock.Text;
+            }
+            else if (radioButtonHeavy.Checked == true)
+            {
+                gender = radioButtonHeavy.Text;
+
+            }
+            else if (radioButtonPop.Checked == true)
+            {
+                gender = radioButtonPop.Text;
+
+            }
+            else if (radioButtonRap.Checked == true)
+            {
+                gender = radioButtonRap.Text;
+
+            }
+            else if (radioButtonFunk.Checked == true)
+            {
+                gender = radioButtonFunk.Text;
+
+            }
+
+            return gender;
+        }
+
+        private string SeleccionarDificultadPregunta(string dificul)
+        {
+            string dificult;
+            if (radioButtonFacil.Checked == true)
+            {
+                dificult = "Facil";
+            }
+            else if (radioButtonMedio.Checked == true)
+            {
+                dificult = "Medio";
+            }
+            else
+            {
+                dificult = "Dificil";
+            }
+
+            return dificult;
         }
 
         private bool ControlCuartaPregunta(bool isTrueRes4)
@@ -152,10 +218,15 @@ namespace ProjecteGrup
             return respuestas;
         }
 
-        private static Pregunta ObtenerObjetoPregunta(String pregunta, List<Respuesta> respuestas) 
+        private static Pregunta ObtenerObjetoPregunta(String pregunta, List<Respuesta> respuestas, String dificult, String gender) 
         {
-            Pregunta preguntaGuardar = new Pregunta(pregunta, respuestas);
+            Pregunta preguntaGuardar = new Pregunta(pregunta, respuestas, dificult, gender);
             return preguntaGuardar;
+        }
+
+        private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

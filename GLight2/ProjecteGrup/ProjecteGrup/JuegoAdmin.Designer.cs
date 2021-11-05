@@ -75,11 +75,19 @@ namespace ProjecteGrup
             this.funkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBoxDificultad = new System.Windows.Forms.GroupBox();
+            this.radioButtonFacil = new System.Windows.Forms.RadioButton();
+            this.radioButtonMedio = new System.Windows.Forms.RadioButton();
+            this.radioButtonDificil = new System.Windows.Forms.RadioButton();
+            this.groupBoxGeneros = new System.Windows.Forms.GroupBox();
+            this.radioButtonRock = new System.Windows.Forms.RadioButton();
+            this.radioButtonHeavy = new System.Windows.Forms.RadioButton();
+            this.radioButtonPop = new System.Windows.Forms.RadioButton();
+            this.radioButtonRap = new System.Windows.Forms.RadioButton();
+            this.radioButtonFunk = new System.Windows.Forms.RadioButton();
+            this.Genero = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pregunta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RespuestaPrimera = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RespuestaSegunda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RespuestaTercera = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.RespuestaCuarta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dificult = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBoxAñadir.SuspendLayout();
             this.groupBoxRespuesta4.SuspendLayout();
             this.groupBoxRespuesta3.SuspendLayout();
@@ -88,10 +96,14 @@ namespace ProjecteGrup
             this.groupBoxModificar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.groupBoxDificultad.SuspendLayout();
+            this.groupBoxGeneros.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxAñadir
             // 
+            this.groupBoxAñadir.Controls.Add(this.groupBoxGeneros);
+            this.groupBoxAñadir.Controls.Add(this.groupBoxDificultad);
             this.groupBoxAñadir.Controls.Add(this.labelControl4);
             this.groupBoxAñadir.Controls.Add(this.labelControl3);
             this.groupBoxAñadir.Controls.Add(this.labelControl2);
@@ -113,7 +125,7 @@ namespace ProjecteGrup
             this.groupBoxAñadir.Controls.Add(this.textBoxPregunta);
             this.groupBoxAñadir.Location = new System.Drawing.Point(12, 32);
             this.groupBoxAñadir.Name = "groupBoxAñadir";
-            this.groupBoxAñadir.Size = new System.Drawing.Size(678, 224);
+            this.groupBoxAñadir.Size = new System.Drawing.Size(678, 267);
             this.groupBoxAñadir.TabIndex = 3;
             this.groupBoxAñadir.TabStop = false;
             this.groupBoxAñadir.Text = "Añadir Preguntas";
@@ -121,7 +133,7 @@ namespace ProjecteGrup
             // labelControl4
             // 
             this.labelControl4.AutoSize = true;
-            this.labelControl4.Location = new System.Drawing.Point(6, 170);
+            this.labelControl4.Location = new System.Drawing.Point(6, 215);
             this.labelControl4.Name = "labelControl4";
             this.labelControl4.Size = new System.Drawing.Size(13, 13);
             this.labelControl4.TabIndex = 25;
@@ -130,7 +142,7 @@ namespace ProjecteGrup
             // labelControl3
             // 
             this.labelControl3.AutoSize = true;
-            this.labelControl3.Location = new System.Drawing.Point(6, 135);
+            this.labelControl3.Location = new System.Drawing.Point(6, 180);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(13, 13);
             this.labelControl3.TabIndex = 5;
@@ -139,7 +151,7 @@ namespace ProjecteGrup
             // labelControl2
             // 
             this.labelControl2.AutoSize = true;
-            this.labelControl2.Location = new System.Drawing.Point(6, 99);
+            this.labelControl2.Location = new System.Drawing.Point(6, 144);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(13, 13);
             this.labelControl2.TabIndex = 24;
@@ -148,7 +160,7 @@ namespace ProjecteGrup
             // labelControl1
             // 
             this.labelControl1.AutoSize = true;
-            this.labelControl1.Location = new System.Drawing.Point(6, 62);
+            this.labelControl1.Location = new System.Drawing.Point(6, 107);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(13, 13);
             this.labelControl1.TabIndex = 23;
@@ -158,7 +170,7 @@ namespace ProjecteGrup
             // 
             this.groupBoxRespuesta4.Controls.Add(this.radioButtonCiertoCuarto);
             this.groupBoxRespuesta4.Controls.Add(this.radioButtonFalsoCuarto);
-            this.groupBoxRespuesta4.Location = new System.Drawing.Point(536, 158);
+            this.groupBoxRespuesta4.Location = new System.Drawing.Point(536, 203);
             this.groupBoxRespuesta4.Name = "groupBoxRespuesta4";
             this.groupBoxRespuesta4.Size = new System.Drawing.Size(125, 29);
             this.groupBoxRespuesta4.TabIndex = 22;
@@ -191,7 +203,7 @@ namespace ProjecteGrup
             // 
             this.groupBoxRespuesta3.Controls.Add(this.radioButtonCiertoTercero);
             this.groupBoxRespuesta3.Controls.Add(this.radioButtonFalsoTercero);
-            this.groupBoxRespuesta3.Location = new System.Drawing.Point(536, 123);
+            this.groupBoxRespuesta3.Location = new System.Drawing.Point(536, 168);
             this.groupBoxRespuesta3.Name = "groupBoxRespuesta3";
             this.groupBoxRespuesta3.Size = new System.Drawing.Size(125, 29);
             this.groupBoxRespuesta3.TabIndex = 21;
@@ -224,7 +236,7 @@ namespace ProjecteGrup
             // 
             this.groupBoxRespuesta2.Controls.Add(this.radioButtonCiertoSegundo);
             this.groupBoxRespuesta2.Controls.Add(this.radioButtonFalsoSegundo);
-            this.groupBoxRespuesta2.Location = new System.Drawing.Point(536, 84);
+            this.groupBoxRespuesta2.Location = new System.Drawing.Point(536, 129);
             this.groupBoxRespuesta2.Name = "groupBoxRespuesta2";
             this.groupBoxRespuesta2.Size = new System.Drawing.Size(125, 32);
             this.groupBoxRespuesta2.TabIndex = 20;
@@ -257,7 +269,7 @@ namespace ProjecteGrup
             // 
             this.groupBoxPrimeraRespuesta1.Controls.Add(this.radioButtonCiertoPrimero);
             this.groupBoxPrimeraRespuesta1.Controls.Add(this.radioButtonFalsoPrimero);
-            this.groupBoxPrimeraRespuesta1.Location = new System.Drawing.Point(536, 49);
+            this.groupBoxPrimeraRespuesta1.Location = new System.Drawing.Point(536, 94);
             this.groupBoxPrimeraRespuesta1.Name = "groupBoxPrimeraRespuesta1";
             this.groupBoxPrimeraRespuesta1.Size = new System.Drawing.Size(125, 30);
             this.groupBoxPrimeraRespuesta1.TabIndex = 19;
@@ -288,7 +300,7 @@ namespace ProjecteGrup
             // 
             // buttonAñadir
             // 
-            this.buttonAñadir.Location = new System.Drawing.Point(444, 193);
+            this.buttonAñadir.Location = new System.Drawing.Point(444, 238);
             this.buttonAñadir.Name = "buttonAñadir";
             this.buttonAñadir.Size = new System.Drawing.Size(75, 23);
             this.buttonAñadir.TabIndex = 10;
@@ -299,7 +311,7 @@ namespace ProjecteGrup
             // labelRespuesta4
             // 
             this.labelRespuesta4.AutoSize = true;
-            this.labelRespuesta4.Location = new System.Drawing.Point(86, 170);
+            this.labelRespuesta4.Location = new System.Drawing.Point(86, 215);
             this.labelRespuesta4.Name = "labelRespuesta4";
             this.labelRespuesta4.Size = new System.Drawing.Size(64, 13);
             this.labelRespuesta4.TabIndex = 9;
@@ -308,7 +320,7 @@ namespace ProjecteGrup
             // labelRespuesta3
             // 
             this.labelRespuesta3.AutoSize = true;
-            this.labelRespuesta3.Location = new System.Drawing.Point(86, 135);
+            this.labelRespuesta3.Location = new System.Drawing.Point(86, 180);
             this.labelRespuesta3.Name = "labelRespuesta3";
             this.labelRespuesta3.Size = new System.Drawing.Size(64, 13);
             this.labelRespuesta3.TabIndex = 8;
@@ -317,7 +329,7 @@ namespace ProjecteGrup
             // labelRespuesta2
             // 
             this.labelRespuesta2.AutoSize = true;
-            this.labelRespuesta2.Location = new System.Drawing.Point(86, 99);
+            this.labelRespuesta2.Location = new System.Drawing.Point(86, 144);
             this.labelRespuesta2.Name = "labelRespuesta2";
             this.labelRespuesta2.Size = new System.Drawing.Size(64, 13);
             this.labelRespuesta2.TabIndex = 7;
@@ -326,7 +338,7 @@ namespace ProjecteGrup
             // labelRespuesta1
             // 
             this.labelRespuesta1.AutoSize = true;
-            this.labelRespuesta1.Location = new System.Drawing.Point(86, 62);
+            this.labelRespuesta1.Location = new System.Drawing.Point(86, 107);
             this.labelRespuesta1.Name = "labelRespuesta1";
             this.labelRespuesta1.Size = new System.Drawing.Size(64, 13);
             this.labelRespuesta1.TabIndex = 6;
@@ -335,7 +347,7 @@ namespace ProjecteGrup
             // textBoxResposta4
             // 
             this.textBoxResposta4.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxResposta4.Location = new System.Drawing.Point(156, 167);
+            this.textBoxResposta4.Location = new System.Drawing.Point(156, 212);
             this.textBoxResposta4.Multiline = true;
             this.textBoxResposta4.Name = "textBoxResposta4";
             this.textBoxResposta4.Size = new System.Drawing.Size(363, 20);
@@ -344,7 +356,7 @@ namespace ProjecteGrup
             // textBoxResposta3
             // 
             this.textBoxResposta3.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxResposta3.Location = new System.Drawing.Point(156, 132);
+            this.textBoxResposta3.Location = new System.Drawing.Point(156, 177);
             this.textBoxResposta3.Multiline = true;
             this.textBoxResposta3.Name = "textBoxResposta3";
             this.textBoxResposta3.Size = new System.Drawing.Size(363, 20);
@@ -353,7 +365,7 @@ namespace ProjecteGrup
             // textBoxResposta2
             // 
             this.textBoxResposta2.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxResposta2.Location = new System.Drawing.Point(156, 96);
+            this.textBoxResposta2.Location = new System.Drawing.Point(156, 141);
             this.textBoxResposta2.Multiline = true;
             this.textBoxResposta2.Name = "textBoxResposta2";
             this.textBoxResposta2.Size = new System.Drawing.Size(363, 20);
@@ -362,7 +374,7 @@ namespace ProjecteGrup
             // textBoxResposta1
             // 
             this.textBoxResposta1.BackColor = System.Drawing.SystemColors.Menu;
-            this.textBoxResposta1.Location = new System.Drawing.Point(156, 59);
+            this.textBoxResposta1.Location = new System.Drawing.Point(156, 104);
             this.textBoxResposta1.Multiline = true;
             this.textBoxResposta1.Name = "textBoxResposta1";
             this.textBoxResposta1.Size = new System.Drawing.Size(363, 20);
@@ -392,7 +404,7 @@ namespace ProjecteGrup
             this.groupBoxModificar.Controls.Add(this.buttonEliminar);
             this.groupBoxModificar.Controls.Add(this.dataGridView1);
             this.groupBoxModificar.Controls.Add(this.buttonModificar);
-            this.groupBoxModificar.Location = new System.Drawing.Point(12, 262);
+            this.groupBoxModificar.Location = new System.Drawing.Point(12, 305);
             this.groupBoxModificar.Name = "groupBoxModificar";
             this.groupBoxModificar.Size = new System.Drawing.Size(678, 254);
             this.groupBoxModificar.TabIndex = 4;
@@ -422,11 +434,9 @@ namespace ProjecteGrup
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Genero,
             this.Pregunta,
-            this.RespuestaPrimera,
-            this.RespuestaSegunda,
-            this.RespuestaTercera,
-            this.RespuestaCuarta});
+            this.Dificult});
             this.dataGridView1.Location = new System.Drawing.Point(0, 19);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(678, 188);
@@ -531,8 +541,125 @@ namespace ProjecteGrup
             // 
             this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
             this.salirToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem1.Text = "Salir";
+            this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
+            // 
+            // groupBoxDificultad
+            // 
+            this.groupBoxDificultad.Controls.Add(this.radioButtonDificil);
+            this.groupBoxDificultad.Controls.Add(this.radioButtonMedio);
+            this.groupBoxDificultad.Controls.Add(this.radioButtonFacil);
+            this.groupBoxDificultad.Location = new System.Drawing.Point(536, 11);
+            this.groupBoxDificultad.Name = "groupBoxDificultad";
+            this.groupBoxDificultad.Size = new System.Drawing.Size(125, 79);
+            this.groupBoxDificultad.TabIndex = 26;
+            this.groupBoxDificultad.TabStop = false;
+            this.groupBoxDificultad.Text = "Dificultad";
+            // 
+            // radioButtonFacil
+            // 
+            this.radioButtonFacil.AutoSize = true;
+            this.radioButtonFacil.Checked = true;
+            this.radioButtonFacil.Location = new System.Drawing.Point(7, 20);
+            this.radioButtonFacil.Name = "radioButtonFacil";
+            this.radioButtonFacil.Size = new System.Drawing.Size(47, 17);
+            this.radioButtonFacil.TabIndex = 0;
+            this.radioButtonFacil.TabStop = true;
+            this.radioButtonFacil.Text = "Fácil";
+            this.radioButtonFacil.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonMedio
+            // 
+            this.radioButtonMedio.AutoSize = true;
+            this.radioButtonMedio.Location = new System.Drawing.Point(7, 38);
+            this.radioButtonMedio.Name = "radioButtonMedio";
+            this.radioButtonMedio.Size = new System.Drawing.Size(54, 17);
+            this.radioButtonMedio.TabIndex = 1;
+            this.radioButtonMedio.Text = "Medio";
+            this.radioButtonMedio.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonDificil
+            // 
+            this.radioButtonDificil.AutoSize = true;
+            this.radioButtonDificil.Location = new System.Drawing.Point(7, 56);
+            this.radioButtonDificil.Name = "radioButtonDificil";
+            this.radioButtonDificil.Size = new System.Drawing.Size(52, 17);
+            this.radioButtonDificil.TabIndex = 2;
+            this.radioButtonDificil.Text = "Difícil";
+            this.radioButtonDificil.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxGeneros
+            // 
+            this.groupBoxGeneros.Controls.Add(this.radioButtonFunk);
+            this.groupBoxGeneros.Controls.Add(this.radioButtonRap);
+            this.groupBoxGeneros.Controls.Add(this.radioButtonPop);
+            this.groupBoxGeneros.Controls.Add(this.radioButtonHeavy);
+            this.groupBoxGeneros.Controls.Add(this.radioButtonRock);
+            this.groupBoxGeneros.Location = new System.Drawing.Point(156, 50);
+            this.groupBoxGeneros.Name = "groupBoxGeneros";
+            this.groupBoxGeneros.Size = new System.Drawing.Size(283, 39);
+            this.groupBoxGeneros.TabIndex = 27;
+            this.groupBoxGeneros.TabStop = false;
+            this.groupBoxGeneros.Text = "Géneros";
+            // 
+            // radioButtonRock
+            // 
+            this.radioButtonRock.AutoSize = true;
+            this.radioButtonRock.Checked = true;
+            this.radioButtonRock.Location = new System.Drawing.Point(7, 16);
+            this.radioButtonRock.Name = "radioButtonRock";
+            this.radioButtonRock.Size = new System.Drawing.Size(51, 17);
+            this.radioButtonRock.TabIndex = 0;
+            this.radioButtonRock.TabStop = true;
+            this.radioButtonRock.Text = "Rock";
+            this.radioButtonRock.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonHeavy
+            // 
+            this.radioButtonHeavy.AutoSize = true;
+            this.radioButtonHeavy.Location = new System.Drawing.Point(67, 16);
+            this.radioButtonHeavy.Name = "radioButtonHeavy";
+            this.radioButtonHeavy.Size = new System.Drawing.Size(56, 17);
+            this.radioButtonHeavy.TabIndex = 1;
+            this.radioButtonHeavy.Text = "Heavy";
+            this.radioButtonHeavy.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonPop
+            // 
+            this.radioButtonPop.AutoSize = true;
+            this.radioButtonPop.Location = new System.Drawing.Point(130, 16);
+            this.radioButtonPop.Name = "radioButtonPop";
+            this.radioButtonPop.Size = new System.Drawing.Size(44, 17);
+            this.radioButtonPop.TabIndex = 2;
+            this.radioButtonPop.Text = "Pop";
+            this.radioButtonPop.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonRap
+            // 
+            this.radioButtonRap.AutoSize = true;
+            this.radioButtonRap.Location = new System.Drawing.Point(181, 16);
+            this.radioButtonRap.Name = "radioButtonRap";
+            this.radioButtonRap.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonRap.TabIndex = 3;
+            this.radioButtonRap.Text = "Rap";
+            this.radioButtonRap.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonFunk
+            // 
+            this.radioButtonFunk.AutoSize = true;
+            this.radioButtonFunk.Location = new System.Drawing.Point(232, 16);
+            this.radioButtonFunk.Name = "radioButtonFunk";
+            this.radioButtonFunk.Size = new System.Drawing.Size(49, 17);
+            this.radioButtonFunk.TabIndex = 4;
+            this.radioButtonFunk.Text = "Funk";
+            this.radioButtonFunk.UseVisualStyleBackColor = true;
+            // 
+            // Genero
+            // 
+            this.Genero.DataPropertyName = "Gender";
+            this.Genero.HeaderText = "Género";
+            this.Genero.Name = "Genero";
             // 
             // Pregunta
             // 
@@ -541,40 +668,18 @@ namespace ProjecteGrup
             this.Pregunta.HeaderText = "Pregunta";
             this.Pregunta.Name = "Pregunta";
             // 
-            // RespuestaPrimera
+            // Dificult
             // 
-            this.RespuestaPrimera.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.RespuestaPrimera.DataPropertyName = "Texto";
-            this.RespuestaPrimera.HeaderText = "Respuesta 1";
-            this.RespuestaPrimera.Name = "RespuestaPrimera";
-            // 
-            // RespuestaSegunda
-            // 
-            this.RespuestaSegunda.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.RespuestaSegunda.DataPropertyName = "Texto";
-            this.RespuestaSegunda.HeaderText = "Respuesta 2";
-            this.RespuestaSegunda.Name = "RespuestaSegunda";
-            // 
-            // RespuestaTercera
-            // 
-            this.RespuestaTercera.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.RespuestaTercera.DataPropertyName = "Texto";
-            this.RespuestaTercera.HeaderText = "Respuesta 3";
-            this.RespuestaTercera.Name = "RespuestaTercera";
-            // 
-            // RespuestaCuarta
-            // 
-            this.RespuestaCuarta.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.RespuestaCuarta.DataPropertyName = "Texto";
-            this.RespuestaCuarta.HeaderText = "Respuesta 4";
-            this.RespuestaCuarta.Name = "RespuestaCuarta";
+            this.Dificult.DataPropertyName = "Dificult";
+            this.Dificult.HeaderText = "Dificultad";
+            this.Dificult.Name = "Dificult";
             // 
             // JuegoAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(701, 526);
+            this.ClientSize = new System.Drawing.Size(701, 574);
             this.Controls.Add(this.groupBoxModificar);
             this.Controls.Add(this.groupBoxAñadir);
             this.Controls.Add(this.menuStrip1);
@@ -595,6 +700,10 @@ namespace ProjecteGrup
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBoxDificultad.ResumeLayout(false);
+            this.groupBoxDificultad.PerformLayout();
+            this.groupBoxGeneros.ResumeLayout(false);
+            this.groupBoxGeneros.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -647,10 +756,18 @@ namespace ProjecteGrup
         private System.Windows.Forms.Label labelControl2;
         private System.Windows.Forms.Label labelControl1;
         private System.Windows.Forms.Button buttonRefrescaLista;
+        private System.Windows.Forms.GroupBox groupBoxDificultad;
+        private System.Windows.Forms.RadioButton radioButtonDificil;
+        private System.Windows.Forms.RadioButton radioButtonMedio;
+        private System.Windows.Forms.RadioButton radioButtonFacil;
+        private System.Windows.Forms.GroupBox groupBoxGeneros;
+        private System.Windows.Forms.RadioButton radioButtonFunk;
+        private System.Windows.Forms.RadioButton radioButtonRap;
+        private System.Windows.Forms.RadioButton radioButtonPop;
+        private System.Windows.Forms.RadioButton radioButtonHeavy;
+        private System.Windows.Forms.RadioButton radioButtonRock;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Genero;
         private System.Windows.Forms.DataGridViewTextBoxColumn Pregunta;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RespuestaPrimera;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RespuestaSegunda;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RespuestaTercera;
-        private System.Windows.Forms.DataGridViewTextBoxColumn RespuestaCuarta;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Dificult;
     }
 }

@@ -147,6 +147,7 @@ namespace ProjecteGrup
             this.labelUser.Size = new System.Drawing.Size(16, 13);
             this.labelUser.TabIndex = 5;
             this.labelUser.Text = "...";
+            this.labelUser.Click += new System.EventHandler(this.labelUser_Click);
             // 
             // labelSesion
             // 
@@ -156,6 +157,7 @@ namespace ProjecteGrup
             this.labelSesion.Size = new System.Drawing.Size(16, 13);
             this.labelSesion.TabIndex = 6;
             this.labelSesion.Text = "...";
+            this.labelSesion.Click += new System.EventHandler(this.labelSesion_Click);
             // 
             // labelMenu
             // 

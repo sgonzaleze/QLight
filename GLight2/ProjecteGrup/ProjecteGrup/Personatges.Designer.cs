@@ -42,10 +42,7 @@ namespace ProjecteGrup
             this.funkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBoxImatges = new System.Windows.Forms.PictureBox();
-            this.labelAvatares = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImatges)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -58,7 +55,6 @@ namespace ProjecteGrup
             this.menuStrip1.Size = new System.Drawing.Size(800, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked_1);
             // 
             // géneroToolStripMenuItem
             // 
@@ -79,57 +75,52 @@ namespace ProjecteGrup
             // rockToolStripMenuItem
             // 
             this.rockToolStripMenuItem.Name = "rockToolStripMenuItem";
-            this.rockToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rockToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.rockToolStripMenuItem.Text = "Rock and roll";
-            this.rockToolStripMenuItem.Click += new System.EventHandler(this.rockToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(140, 6);
             // 
             // heavyMetalToolStripMenuItem
             // 
             this.heavyMetalToolStripMenuItem.Name = "heavyMetalToolStripMenuItem";
-            this.heavyMetalToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.heavyMetalToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.heavyMetalToolStripMenuItem.Text = "Heavy metal";
-            this.heavyMetalToolStripMenuItem.Click += new System.EventHandler(this.heavyMetalToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(140, 6);
             // 
             // popToolStripMenuItem
             // 
             this.popToolStripMenuItem.Name = "popToolStripMenuItem";
-            this.popToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.popToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.popToolStripMenuItem.Text = "Pop";
-            this.popToolStripMenuItem.Click += new System.EventHandler(this.popToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(140, 6);
             // 
             // rapToolStripMenuItem
             // 
             this.rapToolStripMenuItem.Name = "rapToolStripMenuItem";
-            this.rapToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rapToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.rapToolStripMenuItem.Text = "Rap";
-            this.rapToolStripMenuItem.Click += new System.EventHandler(this.rapToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(140, 6);
             // 
             // funkToolStripMenuItem
             // 
             this.funkToolStripMenuItem.Name = "funkToolStripMenuItem";
-            this.funkToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.funkToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.funkToolStripMenuItem.Text = "Funk";
-            this.funkToolStripMenuItem.Click += new System.EventHandler(this.funkToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -146,40 +137,18 @@ namespace ProjecteGrup
             this.salirToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
             this.salirToolStripMenuItem1.Text = "Salir";
             // 
-            // pictureBoxImatges
-            // 
-            this.pictureBoxImatges.Image = global::ProjecteGrup.Properties.Resources.brunomars;
-            this.pictureBoxImatges.Location = new System.Drawing.Point(308, 122);
-            this.pictureBoxImatges.Name = "pictureBoxImatges";
-            this.pictureBoxImatges.Size = new System.Drawing.Size(189, 203);
-            this.pictureBoxImatges.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxImatges.TabIndex = 8;
-            this.pictureBoxImatges.TabStop = false;
-            // 
-            // labelAvatares
-            // 
-            this.labelAvatares.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelAvatares.Location = new System.Drawing.Point(305, 341);
-            this.labelAvatares.Name = "labelAvatares";
-            this.labelAvatares.Size = new System.Drawing.Size(192, 26);
-            this.labelAvatares.TabIndex = 9;
-            this.labelAvatares.Text = "Tu avatar segun tu puntuación";
-            // 
             // Personatges
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.labelAvatares);
-            this.Controls.Add(this.pictureBoxImatges);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Personatges";
             this.Text = "Personatges";
             this.Load += new System.EventHandler(this.Personatges_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImatges)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,7 +169,5 @@ namespace ProjecteGrup
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.PictureBox pictureBoxImatges;
-        private System.Windows.Forms.Label labelAvatares;
     }
 }

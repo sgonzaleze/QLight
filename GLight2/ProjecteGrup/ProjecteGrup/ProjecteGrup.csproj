@@ -105,7 +105,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -119,66 +118,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\acdc.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\beatles.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\metallica.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\nirvana.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\judaspriest.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blacksabbath.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ironmaiden.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\rollingstones.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\arianagranded.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\edsheran.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dualipa.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\michaeljackson.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\snoopdogg.jpeg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\50cent.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\2pac.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\eminem.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\larryblackmon.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\jamesbrown.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\sandrasa.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\brunomars.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

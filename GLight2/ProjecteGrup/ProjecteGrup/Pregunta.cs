@@ -10,11 +10,15 @@ namespace ProjecteGrup
     {
         public String PreguntaTexto { get; set; }
         public List<Respuesta> Respuestas { get; set; }
+        public String Dificult { get; set; }
+        public String Gender { get; set; }
 
         public Pregunta() { }
-        public Pregunta(String preguntaTexto, List<Respuesta> respuestas) {
+        public Pregunta(String preguntaTexto, List<Respuesta> respuestas, String dificult, String gender) {
             this.PreguntaTexto = preguntaTexto;
-            this.Respuestas = respuestas; 
+            this.Respuestas = respuestas;
+            this.Dificult = dificult;
+            this.Gender = gender;
         }
     }
 }

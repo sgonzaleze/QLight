@@ -15,7 +15,11 @@ namespace ProjecteGrup
         public MenuAdmin()
         {
             InitializeComponent();
+            DateTime fechaEntrada = DateTime.UtcNow;
+            labelSesion.Text = Convert.ToString(fechaEntrada);
         }
+
+       
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -54,6 +58,16 @@ namespace ProjecteGrup
         {
             JuegoAdmin a = new JuegoAdmin();
             a.ShowDialog();
+        }
+
+        private void labelSesion_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void labelUser_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
