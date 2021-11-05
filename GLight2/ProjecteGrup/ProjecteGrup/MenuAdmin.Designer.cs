@@ -294,6 +294,7 @@ namespace ProjecteGrup
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MenuAdmin";
             this.Text = "Menu";
+            this.Load += new System.EventHandler(this.MenuAdmin_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.groupBoxOpciones.ResumeLayout(false);

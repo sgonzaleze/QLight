@@ -45,7 +45,6 @@ namespace ProjecteGrup
             this.menuToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.juegoToolStripMenuItemPrimero = new System.Windows.Forms.ToolStripMenuItem();
             this.personajesToolStripMenuItemPrimero = new System.Windows.Forms.ToolStripMenuItem();
-            this.usuariosDeGestionToolStripMenuItemPrimero = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItemPrimero = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSesionToolStripMenuItemPrimer = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,21 +54,25 @@ namespace ProjecteGrup
             // 
             // buttonSalir2
             // 
-            this.buttonSalir2.Location = new System.Drawing.Point(373, 28);
+            this.buttonSalir2.Location = new System.Drawing.Point(560, 43);
+            this.buttonSalir2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSalir2.Name = "buttonSalir2";
-            this.buttonSalir2.Size = new System.Drawing.Size(75, 23);
+            this.buttonSalir2.Size = new System.Drawing.Size(112, 35);
             this.buttonSalir2.TabIndex = 24;
             this.buttonSalir2.Text = "Salir";
             this.buttonSalir2.UseVisualStyleBackColor = true;
+            this.buttonSalir2.Click += new System.EventHandler(this.buttonSalir2_Click);
             // 
             // buttonCerrarSesion2
             // 
-            this.buttonCerrarSesion2.Location = new System.Drawing.Point(193, 302);
+            this.buttonCerrarSesion2.Location = new System.Drawing.Point(290, 465);
+            this.buttonCerrarSesion2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonCerrarSesion2.Name = "buttonCerrarSesion2";
-            this.buttonCerrarSesion2.Size = new System.Drawing.Size(77, 23);
+            this.buttonCerrarSesion2.Size = new System.Drawing.Size(116, 35);
             this.buttonCerrarSesion2.TabIndex = 23;
             this.buttonCerrarSesion2.Text = "Cerrar sesión";
             this.buttonCerrarSesion2.UseVisualStyleBackColor = true;
+            this.buttonCerrarSesion2.Click += new System.EventHandler(this.buttonCerrarSesion2_Click);
             // 
             // groupBoxOpciones2
             // 
@@ -78,9 +81,11 @@ namespace ProjecteGrup
             this.groupBoxOpciones2.Controls.Add(this.buttonAceptarAvatar2);
             this.groupBoxOpciones2.Controls.Add(this.buttonAceptarJuego2);
             this.groupBoxOpciones2.Controls.Add(this.labelAvatar2);
-            this.groupBoxOpciones2.Location = new System.Drawing.Point(12, 80);
+            this.groupBoxOpciones2.Location = new System.Drawing.Point(18, 123);
+            this.groupBoxOpciones2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBoxOpciones2.Name = "groupBoxOpciones2";
-            this.groupBoxOpciones2.Size = new System.Drawing.Size(436, 208);
+            this.groupBoxOpciones2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxOpciones2.Size = new System.Drawing.Size(654, 320);
             this.groupBoxOpciones2.TabIndex = 22;
             this.groupBoxOpciones2.TabStop = false;
             this.groupBoxOpciones2.Text = "Opciones Administrador";
@@ -88,45 +93,51 @@ namespace ProjecteGrup
             // labelMenu2
             // 
             this.labelMenu2.AutoSize = true;
-            this.labelMenu2.Location = new System.Drawing.Point(3, 26);
+            this.labelMenu2.Location = new System.Drawing.Point(4, 40);
+            this.labelMenu2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMenu2.Name = "labelMenu2";
-            this.labelMenu2.Size = new System.Drawing.Size(34, 13);
+            this.labelMenu2.Size = new System.Drawing.Size(49, 20);
             this.labelMenu2.TabIndex = 7;
             this.labelMenu2.Text = "Menu";
             // 
             // labelJuego2
             // 
             this.labelJuego2.AutoSize = true;
-            this.labelJuego2.Location = new System.Drawing.Point(34, 58);
+            this.labelJuego2.Location = new System.Drawing.Point(51, 89);
+            this.labelJuego2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelJuego2.Name = "labelJuego2";
-            this.labelJuego2.Size = new System.Drawing.Size(386, 13);
+            this.labelJuego2.Size = new System.Drawing.Size(573, 20);
             this.labelJuego2.TabIndex = 8;
             this.labelJuego2.Text = "Opción para la gestión de datos del juego. Aprieta \"ACEPTAR\" para gestionarlo.";
             // 
             // buttonAceptarAvatar2
             // 
-            this.buttonAceptarAvatar2.Location = new System.Drawing.Point(182, 145);
+            this.buttonAceptarAvatar2.Location = new System.Drawing.Point(273, 223);
+            this.buttonAceptarAvatar2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonAceptarAvatar2.Name = "buttonAceptarAvatar2";
-            this.buttonAceptarAvatar2.Size = new System.Drawing.Size(75, 23);
+            this.buttonAceptarAvatar2.Size = new System.Drawing.Size(112, 35);
             this.buttonAceptarAvatar2.TabIndex = 11;
             this.buttonAceptarAvatar2.Text = "ACEPTAR";
             this.buttonAceptarAvatar2.UseVisualStyleBackColor = true;
             // 
             // buttonAceptarJuego2
             // 
-            this.buttonAceptarJuego2.Location = new System.Drawing.Point(182, 74);
+            this.buttonAceptarJuego2.Location = new System.Drawing.Point(273, 114);
+            this.buttonAceptarJuego2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonAceptarJuego2.Name = "buttonAceptarJuego2";
-            this.buttonAceptarJuego2.Size = new System.Drawing.Size(75, 23);
+            this.buttonAceptarJuego2.Size = new System.Drawing.Size(112, 35);
             this.buttonAceptarJuego2.TabIndex = 9;
             this.buttonAceptarJuego2.Text = "ACEPTAR";
             this.buttonAceptarJuego2.UseVisualStyleBackColor = true;
+            this.buttonAceptarJuego2.Click += new System.EventHandler(this.buttonAceptarJuego2_Click);
             // 
             // labelAvatar2
             // 
             this.labelAvatar2.AutoSize = true;
-            this.labelAvatar2.Location = new System.Drawing.Point(34, 129);
+            this.labelAvatar2.Location = new System.Drawing.Point(51, 198);
+            this.labelAvatar2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAvatar2.Name = "labelAvatar2";
-            this.labelAvatar2.Size = new System.Drawing.Size(401, 13);
+            this.labelAvatar2.Size = new System.Drawing.Size(594, 20);
             this.labelAvatar2.TabIndex = 10;
             this.labelAvatar2.Text = "Opción para la gestión de avatares del juego. Aprieta \"ACEPTAR\" para gestionarlo." +
     "";
@@ -134,47 +145,53 @@ namespace ProjecteGrup
             // labelSesion2
             // 
             this.labelSesion2.AutoSize = true;
-            this.labelSesion2.Location = new System.Drawing.Point(97, 51);
+            this.labelSesion2.Location = new System.Drawing.Point(146, 78);
+            this.labelSesion2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSesion2.Name = "labelSesion2";
-            this.labelSesion2.Size = new System.Drawing.Size(16, 13);
+            this.labelSesion2.Size = new System.Drawing.Size(21, 20);
             this.labelSesion2.TabIndex = 21;
             this.labelSesion2.Text = "...";
             // 
             // labelUser2
             // 
             this.labelUser2.AutoSize = true;
-            this.labelUser2.Location = new System.Drawing.Point(97, 33);
+            this.labelUser2.Location = new System.Drawing.Point(146, 51);
+            this.labelUser2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUser2.Name = "labelUser2";
-            this.labelUser2.Size = new System.Drawing.Size(16, 13);
+            this.labelUser2.Size = new System.Drawing.Size(21, 20);
             this.labelUser2.TabIndex = 20;
             this.labelUser2.Text = "...";
             // 
             // labelInicioSesion2
             // 
             this.labelInicioSesion2.AutoSize = true;
-            this.labelInicioSesion2.Location = new System.Drawing.Point(9, 51);
+            this.labelInicioSesion2.Location = new System.Drawing.Point(14, 78);
+            this.labelInicioSesion2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelInicioSesion2.Name = "labelInicioSesion2";
-            this.labelInicioSesion2.Size = new System.Drawing.Size(86, 13);
+            this.labelInicioSesion2.Size = new System.Drawing.Size(126, 20);
             this.labelInicioSesion2.TabIndex = 19;
             this.labelInicioSesion2.Text = "Inicio de sesión: ";
             // 
             // labelUsuario2
             // 
             this.labelUsuario2.AutoSize = true;
-            this.labelUsuario2.Location = new System.Drawing.Point(9, 33);
+            this.labelUsuario2.Location = new System.Drawing.Point(14, 51);
+            this.labelUsuario2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUsuario2.Name = "labelUsuario2";
-            this.labelUsuario2.Size = new System.Drawing.Size(49, 13);
+            this.labelUsuario2.Size = new System.Drawing.Size(72, 20);
             this.labelUsuario2.TabIndex = 18;
             this.labelUsuario2.Text = "Usuario: ";
             // 
             // menuStrip2
             // 
+            this.menuStrip2.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem1,
             this.salirToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(462, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(693, 35);
             this.menuStrip2.TabIndex = 17;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -182,32 +199,25 @@ namespace ProjecteGrup
             // 
             this.menuToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.juegoToolStripMenuItemPrimero,
-            this.personajesToolStripMenuItemPrimero,
-            this.usuariosDeGestionToolStripMenuItemPrimero});
+            this.personajesToolStripMenuItemPrimero});
             this.menuToolStripMenuItem1.Name = "menuToolStripMenuItem1";
-            this.menuToolStripMenuItem1.Size = new System.Drawing.Size(50, 20);
+            this.menuToolStripMenuItem1.Size = new System.Drawing.Size(73, 29);
             this.menuToolStripMenuItem1.Text = "Menu";
             // 
             // juegoToolStripMenuItemPrimero
             // 
             this.juegoToolStripMenuItemPrimero.Name = "juegoToolStripMenuItemPrimero";
             this.juegoToolStripMenuItemPrimero.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D1)));
-            this.juegoToolStripMenuItemPrimero.Size = new System.Drawing.Size(213, 22);
+            this.juegoToolStripMenuItemPrimero.Size = new System.Drawing.Size(270, 34);
             this.juegoToolStripMenuItemPrimero.Text = "Juego";
+            this.juegoToolStripMenuItemPrimero.Click += new System.EventHandler(this.juegoToolStripMenuItemPrimero_Click);
             // 
             // personajesToolStripMenuItemPrimero
             // 
             this.personajesToolStripMenuItemPrimero.Name = "personajesToolStripMenuItemPrimero";
             this.personajesToolStripMenuItemPrimero.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D2)));
-            this.personajesToolStripMenuItemPrimero.Size = new System.Drawing.Size(213, 22);
+            this.personajesToolStripMenuItemPrimero.Size = new System.Drawing.Size(327, 34);
             this.personajesToolStripMenuItemPrimero.Text = "Personajes";
-            // 
-            // usuariosDeGestionToolStripMenuItemPrimero
-            // 
-            this.usuariosDeGestionToolStripMenuItemPrimero.Name = "usuariosDeGestionToolStripMenuItemPrimero";
-            this.usuariosDeGestionToolStripMenuItemPrimero.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D3)));
-            this.usuariosDeGestionToolStripMenuItemPrimero.Size = new System.Drawing.Size(213, 22);
-            this.usuariosDeGestionToolStripMenuItemPrimero.Text = "Usuarios de gestión";
             // 
             // salirToolStripMenuItem
             // 
@@ -215,29 +225,31 @@ namespace ProjecteGrup
             this.salirToolStripMenuItemPrimero,
             this.cerrarSesionToolStripMenuItemPrimer});
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // salirToolStripMenuItemPrimero
             // 
             this.salirToolStripMenuItemPrimero.Name = "salirToolStripMenuItemPrimero";
             this.salirToolStripMenuItemPrimero.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.salirToolStripMenuItemPrimero.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItemPrimero.Size = new System.Drawing.Size(274, 34);
             this.salirToolStripMenuItemPrimero.Text = "Salir";
+            this.salirToolStripMenuItemPrimero.Click += new System.EventHandler(this.salirToolStripMenuItemPrimero_Click);
             // 
             // cerrarSesionToolStripMenuItemPrimer
             // 
             this.cerrarSesionToolStripMenuItemPrimer.Name = "cerrarSesionToolStripMenuItemPrimer";
             this.cerrarSesionToolStripMenuItemPrimer.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
-            this.cerrarSesionToolStripMenuItemPrimer.Size = new System.Drawing.Size(180, 22);
+            this.cerrarSesionToolStripMenuItemPrimer.Size = new System.Drawing.Size(274, 34);
             this.cerrarSesionToolStripMenuItemPrimer.Text = "Cerrar sesión";
+            this.cerrarSesionToolStripMenuItemPrimer.Click += new System.EventHandler(this.cerrarSesionToolStripMenuItemPrimer_Click);
             // 
             // MenuAdminBasico
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(462, 333);
+            this.ClientSize = new System.Drawing.Size(693, 512);
             this.Controls.Add(this.buttonSalir2);
             this.Controls.Add(this.buttonCerrarSesion2);
             this.Controls.Add(this.groupBoxOpciones2);
@@ -246,8 +258,10 @@ namespace ProjecteGrup
             this.Controls.Add(this.labelInicioSesion2);
             this.Controls.Add(this.labelUsuario2);
             this.Controls.Add(this.menuStrip2);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MenuAdminBasico";
             this.Text = "MenuAdminBasico";
+            this.Load += new System.EventHandler(this.MenuAdminBasico_Load);
             this.groupBoxOpciones2.ResumeLayout(false);
             this.groupBoxOpciones2.PerformLayout();
             this.menuStrip2.ResumeLayout(false);
@@ -275,7 +289,6 @@ namespace ProjecteGrup
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem juegoToolStripMenuItemPrimero;
         private System.Windows.Forms.ToolStripMenuItem personajesToolStripMenuItemPrimero;
-        private System.Windows.Forms.ToolStripMenuItem usuariosDeGestionToolStripMenuItemPrimero;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItemPrimero;
         private System.Windows.Forms.ToolStripMenuItem cerrarSesionToolStripMenuItemPrimer;

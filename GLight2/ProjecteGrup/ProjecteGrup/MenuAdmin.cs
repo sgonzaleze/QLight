@@ -95,5 +95,10 @@ namespace ProjecteGrup
         {
             this.Close();
         }
+
+        private void MenuAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
