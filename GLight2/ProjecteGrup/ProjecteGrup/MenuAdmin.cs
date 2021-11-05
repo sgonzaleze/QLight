@@ -79,5 +79,21 @@ namespace ProjecteGrup
         {
 
         }
+
+        private void buttonAceptarAdmins_Click(object sender, EventArgs e)
+        {
+            CrearAdministradores t = new CrearAdministradores();
+            t.ShowDialog();
+        }
+
+        private void buttonSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void buttonCerrarSesion_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

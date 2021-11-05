@@ -55,3 +55,4 @@ C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup
 C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.csproj.CoreCompileInputs.cache
 C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.exe
 C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.pdb
+C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.CrearAdministradores.resources

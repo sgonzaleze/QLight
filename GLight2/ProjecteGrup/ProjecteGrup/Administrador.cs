@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjecteGrup
 {
-    class Administrador
+    public class Administrador
     {
         public String Name { get; set; }
         public String Surname { get; set; }

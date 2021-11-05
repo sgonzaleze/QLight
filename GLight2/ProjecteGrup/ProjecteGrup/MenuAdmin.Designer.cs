@@ -57,12 +57,14 @@ namespace ProjecteGrup
             // 
             // menuStrip2
             // 
+            this.menuStrip2.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
+            this.menuStrip2.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem1,
             this.salirToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Size = new System.Drawing.Size(479, 24);
+            this.menuStrip2.Size = new System.Drawing.Size(718, 33);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -73,28 +75,28 @@ namespace ProjecteGrup
             this.personajesToolStripMenuItemPrimero,
             this.usuariosDeGestionToolStripMenuItemPrimero});
             this.menuToolStripMenuItem1.Name = "menuToolStripMenuItem1";
-            this.menuToolStripMenuItem1.Size = new System.Drawing.Size(50, 20);
+            this.menuToolStripMenuItem1.Size = new System.Drawing.Size(73, 29);
             this.menuToolStripMenuItem1.Text = "Menu";
             // 
             // juegoToolStripMenuItemPrimero
             // 
             this.juegoToolStripMenuItemPrimero.Name = "juegoToolStripMenuItemPrimero";
             this.juegoToolStripMenuItemPrimero.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D1)));
-            this.juegoToolStripMenuItemPrimero.Size = new System.Drawing.Size(213, 22);
+            this.juegoToolStripMenuItemPrimero.Size = new System.Drawing.Size(327, 34);
             this.juegoToolStripMenuItemPrimero.Text = "Juego";
             // 
             // personajesToolStripMenuItemPrimero
             // 
             this.personajesToolStripMenuItemPrimero.Name = "personajesToolStripMenuItemPrimero";
             this.personajesToolStripMenuItemPrimero.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D2)));
-            this.personajesToolStripMenuItemPrimero.Size = new System.Drawing.Size(213, 22);
+            this.personajesToolStripMenuItemPrimero.Size = new System.Drawing.Size(327, 34);
             this.personajesToolStripMenuItemPrimero.Text = "Personajes";
             // 
             // usuariosDeGestionToolStripMenuItemPrimero
             // 
             this.usuariosDeGestionToolStripMenuItemPrimero.Name = "usuariosDeGestionToolStripMenuItemPrimero";
             this.usuariosDeGestionToolStripMenuItemPrimero.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.D3)));
-            this.usuariosDeGestionToolStripMenuItemPrimero.Size = new System.Drawing.Size(213, 22);
+            this.usuariosDeGestionToolStripMenuItemPrimero.Size = new System.Drawing.Size(327, 34);
             this.usuariosDeGestionToolStripMenuItemPrimero.Text = "Usuarios de gestión";
             // 
             // salirToolStripMenuItem
@@ -103,29 +105,30 @@ namespace ProjecteGrup
             this.salirToolStripMenuItemPrimero,
             this.cerrarSesionToolStripMenuItemPrimer});
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(41, 20);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.salirToolStripMenuItem.Text = "Salir";
             // 
             // salirToolStripMenuItemPrimero
             // 
             this.salirToolStripMenuItemPrimero.Name = "salirToolStripMenuItemPrimero";
             this.salirToolStripMenuItemPrimero.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.salirToolStripMenuItemPrimero.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItemPrimero.Size = new System.Drawing.Size(274, 34);
             this.salirToolStripMenuItemPrimero.Text = "Salir";
             // 
             // cerrarSesionToolStripMenuItemPrimer
             // 
             this.cerrarSesionToolStripMenuItemPrimer.Name = "cerrarSesionToolStripMenuItemPrimer";
             this.cerrarSesionToolStripMenuItemPrimer.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.A)));
-            this.cerrarSesionToolStripMenuItemPrimer.Size = new System.Drawing.Size(180, 22);
+            this.cerrarSesionToolStripMenuItemPrimer.Size = new System.Drawing.Size(274, 34);
             this.cerrarSesionToolStripMenuItemPrimer.Text = "Cerrar sesión";
             // 
             // labelUsuario
             // 
             this.labelUsuario.AutoSize = true;
-            this.labelUsuario.Location = new System.Drawing.Point(12, 37);
+            this.labelUsuario.Location = new System.Drawing.Point(18, 57);
+            this.labelUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(49, 13);
+            this.labelUsuario.Size = new System.Drawing.Size(72, 20);
             this.labelUsuario.TabIndex = 3;
             this.labelUsuario.Text = "Usuario: ";
             this.labelUsuario.Click += new System.EventHandler(this.label1_Click);
@@ -133,18 +136,20 @@ namespace ProjecteGrup
             // labelInicioSesion
             // 
             this.labelInicioSesion.AutoSize = true;
-            this.labelInicioSesion.Location = new System.Drawing.Point(12, 55);
+            this.labelInicioSesion.Location = new System.Drawing.Point(18, 85);
+            this.labelInicioSesion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelInicioSesion.Name = "labelInicioSesion";
-            this.labelInicioSesion.Size = new System.Drawing.Size(86, 13);
+            this.labelInicioSesion.Size = new System.Drawing.Size(126, 20);
             this.labelInicioSesion.TabIndex = 4;
             this.labelInicioSesion.Text = "Inicio de sesión: ";
             // 
             // labelUser
             // 
             this.labelUser.AutoSize = true;
-            this.labelUser.Location = new System.Drawing.Point(100, 37);
+            this.labelUser.Location = new System.Drawing.Point(150, 57);
+            this.labelUser.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelUser.Name = "labelUser";
-            this.labelUser.Size = new System.Drawing.Size(16, 13);
+            this.labelUser.Size = new System.Drawing.Size(21, 20);
             this.labelUser.TabIndex = 5;
             this.labelUser.Text = "...";
             this.labelUser.Click += new System.EventHandler(this.labelUser_Click);
@@ -152,9 +157,10 @@ namespace ProjecteGrup
             // labelSesion
             // 
             this.labelSesion.AutoSize = true;
-            this.labelSesion.Location = new System.Drawing.Point(100, 55);
+            this.labelSesion.Location = new System.Drawing.Point(150, 85);
+            this.labelSesion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSesion.Name = "labelSesion";
-            this.labelSesion.Size = new System.Drawing.Size(16, 13);
+            this.labelSesion.Size = new System.Drawing.Size(21, 20);
             this.labelSesion.TabIndex = 6;
             this.labelSesion.Text = "...";
             this.labelSesion.Click += new System.EventHandler(this.labelSesion_Click);
@@ -162,26 +168,29 @@ namespace ProjecteGrup
             // labelMenu
             // 
             this.labelMenu.AutoSize = true;
-            this.labelMenu.Location = new System.Drawing.Point(3, 26);
+            this.labelMenu.Location = new System.Drawing.Point(4, 40);
+            this.labelMenu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelMenu.Name = "labelMenu";
-            this.labelMenu.Size = new System.Drawing.Size(34, 13);
+            this.labelMenu.Size = new System.Drawing.Size(49, 20);
             this.labelMenu.TabIndex = 7;
             this.labelMenu.Text = "Menu";
             // 
             // labelJuego
             // 
             this.labelJuego.AutoSize = true;
-            this.labelJuego.Location = new System.Drawing.Point(34, 50);
+            this.labelJuego.Location = new System.Drawing.Point(51, 77);
+            this.labelJuego.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelJuego.Name = "labelJuego";
-            this.labelJuego.Size = new System.Drawing.Size(350, 13);
+            this.labelJuego.Size = new System.Drawing.Size(518, 20);
             this.labelJuego.TabIndex = 8;
             this.labelJuego.Text = "Opción para la gestión de datos del juego. \"ACEPTAR\" para gestionarlo.";
             // 
             // buttonAceptarJuego
             // 
-            this.buttonAceptarJuego.Location = new System.Drawing.Point(182, 66);
+            this.buttonAceptarJuego.Location = new System.Drawing.Point(273, 102);
+            this.buttonAceptarJuego.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonAceptarJuego.Name = "buttonAceptarJuego";
-            this.buttonAceptarJuego.Size = new System.Drawing.Size(75, 23);
+            this.buttonAceptarJuego.Size = new System.Drawing.Size(112, 35);
             this.buttonAceptarJuego.TabIndex = 9;
             this.buttonAceptarJuego.Text = "ACEPTAR";
             this.buttonAceptarJuego.UseVisualStyleBackColor = true;
@@ -190,17 +199,19 @@ namespace ProjecteGrup
             // labelAvatar
             // 
             this.labelAvatar.AutoSize = true;
-            this.labelAvatar.Location = new System.Drawing.Point(34, 105);
+            this.labelAvatar.Location = new System.Drawing.Point(51, 162);
+            this.labelAvatar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAvatar.Name = "labelAvatar";
-            this.labelAvatar.Size = new System.Drawing.Size(365, 13);
+            this.labelAvatar.Size = new System.Drawing.Size(539, 20);
             this.labelAvatar.TabIndex = 10;
             this.labelAvatar.Text = "Opción para la gestión de avatares del juego. \"ACEPTAR\" para gestionarlo.";
             // 
             // buttonAceptarAvatar
             // 
-            this.buttonAceptarAvatar.Location = new System.Drawing.Point(182, 121);
+            this.buttonAceptarAvatar.Location = new System.Drawing.Point(273, 186);
+            this.buttonAceptarAvatar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonAceptarAvatar.Name = "buttonAceptarAvatar";
-            this.buttonAceptarAvatar.Size = new System.Drawing.Size(75, 23);
+            this.buttonAceptarAvatar.Size = new System.Drawing.Size(112, 35);
             this.buttonAceptarAvatar.TabIndex = 11;
             this.buttonAceptarAvatar.Text = "ACEPTAR";
             this.buttonAceptarAvatar.UseVisualStyleBackColor = true;
@@ -208,20 +219,23 @@ namespace ProjecteGrup
             // labelAdmins
             // 
             this.labelAdmins.AutoSize = true;
-            this.labelAdmins.Location = new System.Drawing.Point(34, 161);
+            this.labelAdmins.Location = new System.Drawing.Point(51, 248);
+            this.labelAdmins.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelAdmins.Name = "labelAdmins";
-            this.labelAdmins.Size = new System.Drawing.Size(356, 13);
+            this.labelAdmins.Size = new System.Drawing.Size(531, 20);
             this.labelAdmins.TabIndex = 12;
             this.labelAdmins.Text = "Opción para la gestión de administradores. \"ACEPTAR\" para gestionarlos.";
             // 
             // buttonAceptarAdmins
             // 
-            this.buttonAceptarAdmins.Location = new System.Drawing.Point(182, 177);
+            this.buttonAceptarAdmins.Location = new System.Drawing.Point(273, 272);
+            this.buttonAceptarAdmins.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonAceptarAdmins.Name = "buttonAceptarAdmins";
-            this.buttonAceptarAdmins.Size = new System.Drawing.Size(75, 23);
+            this.buttonAceptarAdmins.Size = new System.Drawing.Size(112, 35);
             this.buttonAceptarAdmins.TabIndex = 13;
             this.buttonAceptarAdmins.Text = "ACEPTAR";
             this.buttonAceptarAdmins.UseVisualStyleBackColor = true;
+            this.buttonAceptarAdmins.Click += new System.EventHandler(this.buttonAceptarAdmins_Click);
             // 
             // groupBoxOpciones
             // 
@@ -232,37 +246,43 @@ namespace ProjecteGrup
             this.groupBoxOpciones.Controls.Add(this.buttonAceptarAvatar);
             this.groupBoxOpciones.Controls.Add(this.buttonAceptarJuego);
             this.groupBoxOpciones.Controls.Add(this.labelAvatar);
-            this.groupBoxOpciones.Location = new System.Drawing.Point(15, 84);
+            this.groupBoxOpciones.Location = new System.Drawing.Point(22, 129);
+            this.groupBoxOpciones.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBoxOpciones.Name = "groupBoxOpciones";
-            this.groupBoxOpciones.Size = new System.Drawing.Size(435, 208);
+            this.groupBoxOpciones.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxOpciones.Size = new System.Drawing.Size(652, 320);
             this.groupBoxOpciones.TabIndex = 14;
             this.groupBoxOpciones.TabStop = false;
             this.groupBoxOpciones.Text = "Opciones Administrador";
             // 
             // buttonCerrarSesion
             // 
-            this.buttonCerrarSesion.Location = new System.Drawing.Point(196, 306);
+            this.buttonCerrarSesion.Location = new System.Drawing.Point(294, 471);
+            this.buttonCerrarSesion.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonCerrarSesion.Name = "buttonCerrarSesion";
-            this.buttonCerrarSesion.Size = new System.Drawing.Size(76, 23);
+            this.buttonCerrarSesion.Size = new System.Drawing.Size(114, 35);
             this.buttonCerrarSesion.TabIndex = 15;
             this.buttonCerrarSesion.Text = "Cerrar sesión";
             this.buttonCerrarSesion.UseVisualStyleBackColor = true;
+            this.buttonCerrarSesion.Click += new System.EventHandler(this.buttonCerrarSesion_Click);
             // 
             // buttonSalir
             // 
-            this.buttonSalir.Location = new System.Drawing.Point(376, 32);
+            this.buttonSalir.Location = new System.Drawing.Point(564, 49);
+            this.buttonSalir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.buttonSalir.Name = "buttonSalir";
-            this.buttonSalir.Size = new System.Drawing.Size(74, 23);
+            this.buttonSalir.Size = new System.Drawing.Size(111, 35);
             this.buttonSalir.TabIndex = 16;
             this.buttonSalir.Text = "Salir";
             this.buttonSalir.UseVisualStyleBackColor = true;
+            this.buttonSalir.Click += new System.EventHandler(this.buttonSalir_Click);
             // 
             // MenuAdmin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(479, 334);
+            this.ClientSize = new System.Drawing.Size(718, 514);
             this.Controls.Add(this.buttonSalir);
             this.Controls.Add(this.buttonCerrarSesion);
             this.Controls.Add(this.groupBoxOpciones);
@@ -271,6 +291,7 @@ namespace ProjecteGrup
             this.Controls.Add(this.labelInicioSesion);
             this.Controls.Add(this.labelUsuario);
             this.Controls.Add(this.menuStrip2);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MenuAdmin";
             this.Text = "Menu";
             this.menuStrip2.ResumeLayout(false);

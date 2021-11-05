@@ -17,7 +17,7 @@ namespace ProjecteGrup
             InitializeComponent();
         }
         SuperAdministrador pepe = new SuperAdministrador("Josep", "Guiu", "contrapepe", "jguius");
-
+        //static BindingList<Administrador> listaAdministradores = new BindingList<Administrador>();
         private void buttonSignup_Click(object sender, EventArgs e)
         {
             if(textBoxUser.Text.Equals("") ||  textBoxPassword.Text.Equals(""))
@@ -48,7 +48,10 @@ namespace ProjecteGrup
             }
             
         }
-
+        public static void AgregarAdministradorLista(BindingList<Administrador> x)
+        {
+            //listaAdministradores = x;
+        }
         private void LoginAdmin_Load(object sender, EventArgs e)
         {
 
