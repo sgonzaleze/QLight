@@ -50,7 +50,6 @@ C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup
 C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.MenuAdmin.resources
 C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.LoginAdmin.resources
 C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.MenuAdminBasico.resources
-C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.Personatges.resources
 C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.Properties.Resources.resources
 C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.csproj.GenerateResource.cache
 C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.csproj.CoreCompileInputs.cache

@@ -12,14 +12,24 @@ namespace ProjecteGrup
 {
     public partial class MenuAdmin : Form
     {
+        SuperAdministrador pepe;
+        String reconocimiento;
         public MenuAdmin()
         {
             InitializeComponent();
             DateTime fechaEntrada = DateTime.UtcNow;
             labelSesion.Text = Convert.ToString(fechaEntrada);
         }
+        public MenuAdmin(SuperAdministrador super)
+        {
+            InitializeComponent();
+            DateTime fechaEntrada = DateTime.UtcNow;
+            labelSesion.Text = Convert.ToString(fechaEntrada);
+            this.pepe = super;
+            reconocimiento = pepe.Name + " " + pepe.SurName;
+            labelUser.Text = "SuperAdmin "+reconocimiento;
+        }
 
-       
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
@@ -45,8 +55,8 @@ namespace ProjecteGrup
 
         private void personajesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Personatges p = new Personatges();
-            p.ShowDialog();
+            //Personatges p = new Personatges();
+            //p.ShowDialog();
         }
 
         private void label1_Click(object sender, EventArgs e)

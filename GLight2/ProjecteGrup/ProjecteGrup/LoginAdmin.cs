@@ -27,7 +27,7 @@ namespace ProjecteGrup
                 pictureBoxExclamacion2.Visible = true;
                 pictureBoxExclamacion3.Visible = true;
                 labelError.Visible = true;
-            }else if (!textBoxUser.Text.Equals(pepe.UserName) && !textBoxPassword.Text.Equals(pepe.Password)) {
+            }else if (!textBoxUser.Text.Equals(pepe.UserName) || !textBoxPassword.Text.Equals(pepe.Password)) {
                 MessageBox.Show("El nombre de usuario o contraseña no es correcto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 pictureBoxExclamacion1.Visible = true;
                 pictureBoxExclamacion2.Visible = true;
@@ -36,14 +36,14 @@ namespace ProjecteGrup
             }
             if (textBoxUser.Text.Equals(pepe.UserName) && textBoxPassword.Text.Equals(pepe.Password))
             {
-                MessageBox.Show("Bienvenido, " + pepe.Name, "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                MessageBox.Show("Bienvenido, " + pepe.Name, "Mensaje", MessageBoxButtons.OK);
                 pictureBoxExclamacion1.Visible = false;
                 pictureBoxExclamacion2.Visible = false;
                 pictureBoxExclamacion3.Visible = false;
                 labelError.Visible = false;
                 textBoxUser.Text = "";
                 textBoxPassword.Text = "";
-                MenuAdmin a = new MenuAdmin();
+                MenuAdmin a = new MenuAdmin(pepe);
                 a.ShowDialog();
             }
             

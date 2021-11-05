@@ -71,12 +71,6 @@
     <Compile Include="MenuAdminBasico.Designer.cs">
       <DependentUpon>MenuAdminBasico.cs</DependentUpon>
     </Compile>
-    <Compile Include="Personatges.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Personatges.Designer.cs">
-      <DependentUpon>Personatges.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pregunta.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,9 +87,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MenuAdminBasico.resx">
       <DependentUpon>MenuAdminBasico.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Personatges.resx">
-      <DependentUpon>Personatges.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

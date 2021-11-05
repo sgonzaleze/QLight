@@ -13,11 +13,12 @@ namespace ProjecteGrup
     public partial class JuegoAdmin : Form
     {
         BindingList<Pregunta> generoMusical1 = new BindingList<Pregunta>();
+        
         public JuegoAdmin()
         {
             InitializeComponent();
         }
-
+        
         private void buttonModificar_Click(object sender, EventArgs e)
         {
 
@@ -34,8 +35,8 @@ namespace ProjecteGrup
 
         private void personajesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Personatges p = new Personatges();
-            p.ShowDialog();
+            //Personatges p = new Personatges();
+            //p.ShowDialog();
 
         }
 

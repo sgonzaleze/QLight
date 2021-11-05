@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjecteGrup
 {
-    class SuperAdministrador
+    public class SuperAdministrador
     {
         public String Name { get; set; }
         public String SurName { get; set; }
