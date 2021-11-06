@@ -30,7 +30,7 @@ namespace ProjecteGrup
                 MessageBox.Show("El nombre de usuario o contraseña no es correcto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 MostrarIconosError();
             }
-            if (textBoxUser.Text.Equals(sergio.UserName) && !textBoxPassword.Text.Equals(pepe.Password))
+            if (textBoxUser.Text.Equals(sergio.UserName) && !textBoxPassword.Text.Equals(sergio.Password))
             {
                 MessageBox.Show("El nombre de usuario o contraseña no es correcto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 MostrarIconosError();
