@@ -34,13 +34,13 @@ namespace ProjecteGrup
             this.pictureBoxPassword = new System.Windows.Forms.PictureBox();
             this.textBoxUser = new System.Windows.Forms.TextBox();
             this.textBoxPassword = new System.Windows.Forms.TextBox();
-            this.radioButtonVerPassword = new System.Windows.Forms.RadioButton();
             this.buttonSignUp = new System.Windows.Forms.Button();
             this.labelLogin = new System.Windows.Forms.Label();
             this.pictureBoxExclamacion1 = new System.Windows.Forms.PictureBox();
             this.pictureBoxExclamacion2 = new System.Windows.Forms.PictureBox();
             this.labelError = new System.Windows.Forms.Label();
             this.pictureBoxExclamacion3 = new System.Windows.Forms.PictureBox();
+            this.checkBoxPassword = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsuario)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExclamacion1)).BeginInit();
@@ -85,18 +85,8 @@ namespace ProjecteGrup
             this.textBoxPassword.Size = new System.Drawing.Size(183, 20);
             this.textBoxPassword.TabIndex = 3;
             this.textBoxPassword.Text = "Password";
-            // 
-            // radioButtonVerPassword
-            // 
-            this.radioButtonVerPassword.AutoSize = true;
-            this.radioButtonVerPassword.Location = new System.Drawing.Point(324, 128);
-            this.radioButtonVerPassword.Name = "radioButtonVerPassword";
-            this.radioButtonVerPassword.Size = new System.Drawing.Size(41, 17);
-            this.radioButtonVerPassword.TabIndex = 4;
-            this.radioButtonVerPassword.TabStop = true;
-            this.radioButtonVerPassword.Text = "Ver";
-            this.radioButtonVerPassword.UseVisualStyleBackColor = true;
-            this.radioButtonVerPassword.CheckedChanged += new System.EventHandler(this.radioButtonVerPassword_CheckedChanged);
+            this.textBoxPassword.UseSystemPasswordChar = true;
+            this.textBoxPassword.TextChanged += new System.EventHandler(this.textBoxPassword_TextChanged);
             // 
             // buttonSignUp
             // 
@@ -121,7 +111,7 @@ namespace ProjecteGrup
             // pictureBoxExclamacion1
             // 
             this.pictureBoxExclamacion1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExclamacion1.Image")));
-            this.pictureBoxExclamacion1.Location = new System.Drawing.Point(366, 79);
+            this.pictureBoxExclamacion1.Location = new System.Drawing.Point(408, 79);
             this.pictureBoxExclamacion1.Name = "pictureBoxExclamacion1";
             this.pictureBoxExclamacion1.Size = new System.Drawing.Size(33, 28);
             this.pictureBoxExclamacion1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -132,7 +122,7 @@ namespace ProjecteGrup
             // pictureBoxExclamacion2
             // 
             this.pictureBoxExclamacion2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxExclamacion2.Image")));
-            this.pictureBoxExclamacion2.Location = new System.Drawing.Point(366, 119);
+            this.pictureBoxExclamacion2.Location = new System.Drawing.Point(408, 119);
             this.pictureBoxExclamacion2.Name = "pictureBoxExclamacion2";
             this.pictureBoxExclamacion2.Size = new System.Drawing.Size(33, 28);
             this.pictureBoxExclamacion2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -161,26 +151,37 @@ namespace ProjecteGrup
             this.pictureBoxExclamacion3.TabStop = false;
             this.pictureBoxExclamacion3.Visible = false;
             // 
+            // checkBoxPassword
+            // 
+            this.checkBoxPassword.AutoSize = true;
+            this.checkBoxPassword.Location = new System.Drawing.Point(324, 127);
+            this.checkBoxPassword.Name = "checkBoxPassword";
+            this.checkBoxPassword.Size = new System.Drawing.Size(42, 17);
+            this.checkBoxPassword.TabIndex = 11;
+            this.checkBoxPassword.Text = "Ver";
+            this.checkBoxPassword.UseVisualStyleBackColor = true;
+            this.checkBoxPassword.CheckedChanged += new System.EventHandler(this.checkBoxPassword_CheckedChanged);
+            this.checkBoxPassword.Click += new System.EventHandler(this.checkBoxPassword_Click);
+            // 
             // LoginAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.ClientSize = new System.Drawing.Size(453, 275);
+            this.Controls.Add(this.checkBoxPassword);
             this.Controls.Add(this.pictureBoxExclamacion3);
             this.Controls.Add(this.labelError);
             this.Controls.Add(this.pictureBoxExclamacion2);
             this.Controls.Add(this.pictureBoxExclamacion1);
             this.Controls.Add(this.labelLogin);
             this.Controls.Add(this.buttonSignUp);
-            this.Controls.Add(this.radioButtonVerPassword);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxUser);
             this.Controls.Add(this.pictureBoxPassword);
             this.Controls.Add(this.pictureBoxUsuario);
             this.Name = "LoginAdmin";
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.LoginAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExclamacion1)).EndInit();
@@ -197,13 +198,13 @@ namespace ProjecteGrup
         private System.Windows.Forms.PictureBox pictureBoxPassword;
         private System.Windows.Forms.TextBox textBoxUser;
         private System.Windows.Forms.TextBox textBoxPassword;
-        private System.Windows.Forms.RadioButton radioButtonVerPassword;
         private System.Windows.Forms.Button buttonSignUp;
         private System.Windows.Forms.Label labelLogin;
         private System.Windows.Forms.PictureBox pictureBoxExclamacion1;
         private System.Windows.Forms.PictureBox pictureBoxExclamacion2;
         private System.Windows.Forms.Label labelError;
         private System.Windows.Forms.PictureBox pictureBoxExclamacion3;
+        private System.Windows.Forms.CheckBox checkBoxPassword;
     }
 }
 

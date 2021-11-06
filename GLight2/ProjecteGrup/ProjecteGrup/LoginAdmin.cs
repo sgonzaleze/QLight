@@ -80,14 +80,28 @@ namespace ProjecteGrup
         {
             //listaAdministradores = x;
         }
-        private void LoginAdmin_Load(object sender, EventArgs e)
+   
+
+        private void checkBoxPassword_Click(object sender, EventArgs e)
+        {
+            if (checkBoxPassword.Checked)
+            {
+                textBoxPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBoxPassword.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void textBoxPassword_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void radioButtonVerPassword_CheckedChanged(object sender, EventArgs e)
+        private void checkBoxPassword_CheckedChanged(object sender, EventArgs e)
         {
-            
+
         }
     }
 }
