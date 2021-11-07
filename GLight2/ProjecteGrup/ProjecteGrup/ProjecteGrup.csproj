@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Administrador.cs" />
+    <Compile Include="Avatar.cs" />
     <Compile Include="CrearAdministradores.cs">
       <SubType>Form</SubType>
     </Compile>
