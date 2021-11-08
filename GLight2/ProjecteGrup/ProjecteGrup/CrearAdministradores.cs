@@ -16,7 +16,6 @@ namespace ProjecteGrup
     {
         BindingList<Administrador> ListaAdmins = new BindingList<Administrador>();
         Administrador a;
-        
         public CrearAdministradores()
         {
             InitializeComponent();
@@ -27,6 +26,7 @@ namespace ProjecteGrup
             OpenFileDialog openFiDi = new OpenFileDialog();
             openFiDi.InitialDirectory = Application.StartupPath;
             openFiDi.Filter = "Solo Ficheros Json (*.json)|*.json";
+            
 
             if (openFiDi.ShowDialog().Equals(DialogResult.OK))
             {
@@ -64,7 +64,9 @@ namespace ProjecteGrup
                 AnadirAdminsALista(name, surName, userName, password);
                 dataGridViewAdmins.DataSource = ListaAdmins;
                 LimpiarFormsAdministrador();
-                LoginAdmin.AgregarAdministradorLista(ListaAdmins);
+                JArray arrayAdmins = (JArray)JToken.FromObject(ListaAdmins);
+                File.WriteAllText(@"..\..\JSON\Administrador.json", arrayAdmins.ToString());
+                //LoginAdmin.AgregarAdministradorLista(ListaAdmins);
             }
 
         }

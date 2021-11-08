@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "Sergio",
+    "Surname": "Gonzalez",
+    "Password": "cepnet",
+    "UserName": "Gonzalez"
+  },
+  {
+    "Name": "Alejandro",
+    "Surname": "Gahdjadar",
+    "Password": "cepjandro",
+    "UserName": "Gahdjadar"
+  },
+  {
+    "Name": "Xavier",
+    "Surname": "Monteverde",
+    "Password": "cepxavi",
+    "UserName": "Moteverde"
+  },
+  {
+    "Name": "Abril",
+    "Surname": "Valero",
+    "Password": "Martinez",
+    "UserName": "AValero"
+  },
+  {
+    "Name": "a",
+    "Surname": "s",
+    "Password": "f",
+    "UserName": "d"
+  }
+]
