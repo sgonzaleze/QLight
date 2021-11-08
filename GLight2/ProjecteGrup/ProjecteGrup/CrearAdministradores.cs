@@ -37,6 +37,12 @@ namespace ProjecteGrup
             }
         }
 
+        private void GuardarEnJson()
+        {
+            JArray arrayAdmins = (JArray)JToken.FromObject(ListaAdmins);
+            File.WriteAllText(@"..\..\JSON\Aministrador.json", arrayAdmins.ToString());
+        }
+
         private void buttonAnadirAdmin_Click(object sender, EventArgs e)
         {
             String name = textBoxNombreAdmin.Text;
@@ -64,13 +70,11 @@ namespace ProjecteGrup
                 AnadirAdminsALista(name, surName, userName, password);
                 dataGridViewAdmins.DataSource = ListaAdmins;
                 LimpiarFormsAdministrador();
-                JArray arrayAdmins = (JArray)JToken.FromObject(ListaAdmins);
-                File.WriteAllText(@"..\..\JSON\Administrador.json", arrayAdmins.ToString());
+                GuardarEnJson();
                 //LoginAdmin.AgregarAdministradorLista(ListaAdmins);
             }
 
         }
-
 
         private void AnadirAdminsALista(string name, string surName, string userName, string password)
         {
