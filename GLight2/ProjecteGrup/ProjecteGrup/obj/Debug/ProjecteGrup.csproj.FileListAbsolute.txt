@@ -87,3 +87,5 @@ C:\Users\cep.CEPNET0\Desktop\q2\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\Proj
 C:\Users\cep.CEPNET0\Desktop\q2\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.csproj.CopyComplete
 C:\Users\cep.CEPNET0\Desktop\q2\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.exe
 C:\Users\cep.CEPNET0\Desktop\q2\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.pdb
+C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\Newtonsoft.Json.xml

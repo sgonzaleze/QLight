@@ -16,23 +16,29 @@ namespace ProjecteGrup
     {
         BindingList<Administrador> ListaAdmins = new BindingList<Administrador>();
         Administrador a;
+        
         public CrearAdministradores()
         {
             InitializeComponent();
+            ObtencionDeAdmins();
+        }
+        private void ObtencionDeAdmins()
+        {
+            OpenFileDialog openFiDi = new OpenFileDialog();
+            openFiDi.InitialDirectory = Application.StartupPath;
+            openFiDi.Filter = "Solo Ficheros Json (*.json)|*.json";
+
+            if (openFiDi.ShowDialog().Equals(DialogResult.OK))
+            {
+                labelRuta.Text = openFiDi.FileName;
+                JArray jarrayAdmins = JArray.Parse(File.ReadAllText(labelRuta.Text, Encoding.Default));
+                ListaAdmins = jarrayAdmins.ToObject<BindingList<Administrador>>();
+                dataGridViewAdmins.DataSource = ListaAdmins;
+            }
         }
 
         private void buttonAnadirAdmin_Click(object sender, EventArgs e)
         {
-            //OpenFileDialog openFiDi = new OpenFileDialog();
-            //labelRuta.Text = openFiDi.InitialDirectory;
-            //openFiDi.InitialDirectory = Application.StartupPath;
-            //openFiDi.Filter = "Solo Ficheros Json (*.json)|*.json";
-
-            //JArray jarrayAdmins = JArray.Parse(File.ReadAllText(labelRuta.Text, Encoding.Default));
-
-            //ListaAdmins = jarrayAdmins.ToObject<BindingList<Administrador>>();
-            
-
             String name = textBoxNombreAdmin.Text;
             String surName = textBoxApellidoAdmin.Text;
             String userName = textBoxUserNameAdmin.Text;
@@ -61,9 +67,8 @@ namespace ProjecteGrup
                 LoginAdmin.AgregarAdministradorLista(ListaAdmins);
             }
 
-
-
         }
+
 
         private void AnadirAdminsALista(string name, string surName, string userName, string password)
         {
@@ -107,5 +112,7 @@ namespace ProjecteGrup
         {
 
         }
+
+        
     }
 }
