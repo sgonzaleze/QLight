@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,6 +23,16 @@ namespace ProjecteGrup
 
         private void buttonAnadirAdmin_Click(object sender, EventArgs e)
         {
+            //OpenFileDialog openFiDi = new OpenFileDialog();
+            //labelRuta.Text = openFiDi.InitialDirectory;
+            //openFiDi.InitialDirectory = Application.StartupPath;
+            //openFiDi.Filter = "Solo Ficheros Json (*.json)|*.json";
+
+            //JArray jarrayAdmins = JArray.Parse(File.ReadAllText(labelRuta.Text, Encoding.Default));
+
+            //ListaAdmins = jarrayAdmins.ToObject<BindingList<Administrador>>();
+            
+
             String name = textBoxNombreAdmin.Text;
             String surName = textBoxApellidoAdmin.Text;
             String userName = textBoxUserNameAdmin.Text;
@@ -48,6 +60,8 @@ namespace ProjecteGrup
                 LimpiarFormsAdministrador();
                 LoginAdmin.AgregarAdministradorLista(ListaAdmins);
             }
+
+
 
         }
 
@@ -87,6 +101,11 @@ namespace ProjecteGrup
         private void buttonSalirAdmin_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
