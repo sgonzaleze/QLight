@@ -82,8 +82,17 @@ namespace ProjecteGrup
                 cuarta = ObtenerObjetoRespuesta(respuesta4, isTrueRes4);
                 Respuestas = AnadirLista(primera, segunda, tercera, cuarta);
                 preguntaConRespuestas = new Pregunta(pregunta, Respuestas, dificult, gender);
+
                 generoMusical1.Add(preguntaConRespuestas);
-                dataGridView1.DataSource = generoMusical1;
+                listaMostrar.Add(preguntaConRespuestas);
+
+
+                GuardarEnJsonGeneros(preguntaConRespuestas.Gender);
+
+                
+
+                dataGridView1.DataSource = listaMostrar;
+                //dataGridView1.DataSource = generoMusical1;
 
                 LimpiarFormulario();
             }
@@ -96,9 +105,15 @@ namespace ProjecteGrup
             openFiDi.Filter = "Solo Ficheros Json (*.json)|*.json";
             String ruta = @"..\..\JSON\"+ a +".json";
 
-            JArray jarrayAdmins = JArray.Parse(File.ReadAllText(ruta, Encoding.Default));
-            listaMostrar = jarrayAdmins.ToObject<BindingList<Pregunta>>();
+            JArray jarrayPreguntas = JArray.Parse(File.ReadAllText(ruta, Encoding.Default));
+            listaMostrar = jarrayPreguntas.ToObject<BindingList<Pregunta>>();
             dataGridView1.DataSource = listaMostrar;
+        }
+
+        private void GuardarEnJsonGeneros(String a)
+        {
+            JArray arrayPreguntas = (JArray)JToken.FromObject(listaMostrar);
+            File.WriteAllText(@"..\..\JSON\"+a+".json", arrayPreguntas.ToString());
         }
 
         private void LimpiarFormulario()
