@@ -105,7 +105,7 @@ namespace ProjecteGrup
             openFiDi.Filter = "Solo Ficheros Json (*.json)|*.json";
             String ruta = @"..\..\JSON\"+ a +".json";
 
-            JArray jarrayPreguntas = JArray.Parse(File.ReadAllText(ruta, Encoding.Default));
+            JArray jarrayPreguntas = JArray.Parse(File.ReadAllText(ruta, Encoding.UTF8));
             listaMostrar = jarrayPreguntas.ToObject<BindingList<Pregunta>>();
             dataGridView1.DataSource = listaMostrar;
         }
