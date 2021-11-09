@@ -21,5 +21,166 @@
     ],
     "Dificult": "Easy",
     "Gender": "ROCK"
+  },
+  {
+    "PreguntaTexto": "«The Dark Side Of The Moon» es el disco Rock más vendido de la historia después de Thriller.",
+    "Respuestas": [
+      {
+        "Texto": "Verdadero",
+        "IsTrue": true
+      },
+      {
+        "Texto": "Falso",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Este disco no existe",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Este disco es del género heavy",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Facil",
+    "Gender": "Rock"
+  },
+  {
+    "PreguntaTexto": "«Back In Black» es una canción de:",
+    "Respuestas": [
+      {
+        "Texto": "Pink Floyd.",
+        "IsTrue": true
+      },
+      {
+        "Texto": "The Beatles.",
+        "IsTrue": false
+      },
+      {
+        "Texto": "AC/DC",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Black Sabath",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Medio",
+    "Gender": "Rock"
+  },
+  {
+    "PreguntaTexto": "¿De qué grupo es la canción The Dark Side of the Moon?",
+    "Respuestas": [
+      {
+        "Texto": "AC/DC",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Pink Floyd.",
+        "IsTrue": true
+      },
+      {
+        "Texto": "Queen",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Creedence Revival",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Medio",
+    "Gender": "Rock"
+  },
+  {
+    "PreguntaTexto": "<<Call me>> pertenece a Blondie.",
+    "Respuestas": [
+      {
+        "Texto": "Verdadero.",
+        "IsTrue": true
+      },
+      {
+        "Texto": "Falso.",
+        "IsTrue": false
+      },
+      {
+        "Texto": "No existe",
+        "IsTrue": false
+      },
+      {
+        "Texto": "És una cooperación con ACDC",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Medio",
+    "Gender": "Rock"
+  },
+  {
+    "PreguntaTexto": "El primer vocalista de Black Sabbath fue Dave walker.",
+    "Respuestas": [
+      {
+        "Texto": "Verdadero",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Falso",
+        "IsTrue": true
+      },
+      {
+        "Texto": "Fue Martin Spring",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Eran dos",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Medio",
+    "Gender": "Rock"
+  },
+  {
+    "PreguntaTexto": "Johnny B. Goode es una canción de:",
+    "Respuestas": [
+      {
+        "Texto": "Chuck Berry",
+        "IsTrue": true
+      },
+      {
+        "Texto": "Elvis Presley.",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Berry Chuckie",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Rose Mary",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Medio",
+    "Gender": "Rock"
+  },
+  {
+    "PreguntaTexto": "Seleccione una canción de Deep Purple",
+    "Respuestas": [
+      {
+        "Texto": "Smoke on the water",
+        "IsTrue": true
+      },
+      {
+        "Texto": "Hells bells",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Exploting ",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Remmorial",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Medio",
+    "Gender": "Rock"
   }
 ]
