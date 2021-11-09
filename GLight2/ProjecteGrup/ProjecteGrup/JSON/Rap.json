@@ -1,0 +1,26 @@
+[
+  {
+    "PreguntaTexto": "Rap",
+    "Respuestas": [
+      {
+        "Texto": "Rap",
+        "IsTrue": true
+      },
+      {
+        "Texto": "Rap",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Rap",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Rap",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Easy",
+    "Gender": "Rap"
+  }
+]
+

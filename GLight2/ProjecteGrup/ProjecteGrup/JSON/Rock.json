@@ -1,0 +1,26 @@
+[
+  {
+    "PreguntaTexto": "ROCK",
+    "Respuestas": [
+      {
+        "Texto": "ROCK",
+        "IsTrue": true
+      },
+      {
+        "Texto": "ROCK",
+        "IsTrue": false
+      },
+      {
+        "Texto": "ROCK",
+        "IsTrue": false
+      },
+      {
+        "Texto": "ROCK",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Easy",
+    "Gender":  "ROCK"
+  }
+]
+

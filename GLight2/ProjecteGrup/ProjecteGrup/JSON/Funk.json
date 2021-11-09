@@ -1,0 +1,25 @@
+[
+  {
+    "PreguntaTexto": "Funk",
+    "Respuestas": [
+      {
+        "Texto": "Funk",
+        "IsTrue": true
+      },
+      {
+        "Texto": "Funk",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Funk",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Funk",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Easy",
+    "Gender": "Funk"
+  }
+]

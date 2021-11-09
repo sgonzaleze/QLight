@@ -1,0 +1,27 @@
+[
+  {
+    "PreguntaTexto": "Pop",
+    "Respuestas": [
+      {
+        "Texto": "Pop",
+        "IsTrue": true
+      },
+      {
+        "Texto": "Pop",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Pop",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Pop",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Easy",
+    "Gender": "Pop"
+  }
+]
+
+

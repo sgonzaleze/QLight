@@ -26,15 +26,12 @@ namespace ProjecteGrup
             OpenFileDialog openFiDi = new OpenFileDialog();
             openFiDi.InitialDirectory = Application.StartupPath;
             openFiDi.Filter = "Solo Ficheros Json (*.json)|*.json";
-            
+            String Ruta = @"..\..\JSON\Aministrador.json";
 
-            if (openFiDi.ShowDialog().Equals(DialogResult.OK))
-            {
-                labelRuta.Text = openFiDi.FileName;
-                JArray jarrayAdmins = JArray.Parse(File.ReadAllText(labelRuta.Text, Encoding.Default));
+                JArray jarrayAdmins = JArray.Parse(File.ReadAllText(Ruta, Encoding.Default));
                 ListaAdmins = jarrayAdmins.ToObject<BindingList<Administrador>>();
                 dataGridViewAdmins.DataSource = ListaAdmins;
-            }
+            
         }
 
         private void GuardarEnJson()

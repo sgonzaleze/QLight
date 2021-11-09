@@ -1,0 +1,26 @@
+{
+  [
+    {
+      "PreguntaTexto": "Heavy",
+      "Respuestas": [
+        {
+          "Texto": "Heavy",
+          "IsTrue": true
+        },
+        {
+          "Texto": "Heavy",
+          "IsTrue": false
+        },
+        {
+          "Texto": "Heavy",
+          "IsTrue": false
+        },
+        {
+          "Texto": "Heavy",
+          "IsTrue": false
+        }
+      ],
+      "Dificult": "Easy",
+      "Gender": "Heavy"
+    }
+  ]
