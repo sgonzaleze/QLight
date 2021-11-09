@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,10 +17,11 @@ namespace ProjecteGrup
         public LoginAdmin()
         {
             InitializeComponent();
+            ObtencionDeAdmins();
+            ObtencionSuperAdmin();
         }
-        SuperAdministrador pepe = new SuperAdministrador("Josep", "Guiu", "contrapepe", "jguius");
-        Administrador sergio = new Administrador("Sergio", "Gonzalez", "contra", "usuSergio");
-        //BindingList<Administrador> listaAdministradores = new BindingList<Administrador>();
+        SuperAdministrador pepe;
+        List<Administrador> listaAdministradores = new List<Administrador>();
         private void buttonSignup_Click(object sender, EventArgs e)
         {
             if(textBoxUser.Text.Equals("") ||  textBoxPassword.Text.Equals(""))
@@ -30,11 +33,23 @@ namespace ProjecteGrup
                 MessageBox.Show("El nombre de usuario o contraseña no es correcto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 MostrarIconosError();
             }
-            if (textBoxUser.Text.Equals(sergio.UserName) && !textBoxPassword.Text.Equals(sergio.Password))
+            foreach (Administrador admin in listaAdministradores)
             {
-                MessageBox.Show("El nombre de usuario o contraseña no es correcto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MostrarIconosError();
+                if (textBoxUser.Text.Equals(admin.UserName) && !textBoxPassword.Text.Equals(admin.Password))
+                {
+                    MessageBox.Show("El nombre de usuario o contraseña no es correcto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MostrarIconosError();
+                }
+                if (textBoxUser.Text.Equals(admin.UserName) && textBoxPassword.Text.Equals(admin.Password))
+                {
+                    MessageBox.Show("Bienvenido, " + admin.Name, "Mensaje", MessageBoxButtons.OK);
+                    NoMostrarIconosError();
+                    LimpiarLogin();
+                    MenuAdminBasico a = new MenuAdminBasico(admin);
+                    a.ShowDialog();
+                }
             }
+
             if (textBoxUser.Text.Equals(pepe.UserName) && textBoxPassword.Text.Equals(pepe.Password))
             {
                 MessageBox.Show("Bienvenido, " + pepe.Name, "Mensaje", MessageBoxButtons.OK);
@@ -43,15 +58,29 @@ namespace ProjecteGrup
                 MenuAdmin a = new MenuAdmin(pepe);
                 a.ShowDialog();
             }
-            if (textBoxUser.Text.Equals(sergio.UserName) && textBoxPassword.Text.Equals(sergio.Password))
-            {
-                MessageBox.Show("Bienvenido, " + sergio.Name, "Mensaje", MessageBoxButtons.OK);
-                NoMostrarIconosError();
-                LimpiarLogin();
-                MenuAdminBasico a = new MenuAdminBasico(sergio);
-                a.ShowDialog();
-            }
 
+        }
+
+        private void ObtencionDeAdmins()
+        {
+            OpenFileDialog openFiDi = new OpenFileDialog();
+            openFiDi.InitialDirectory = Application.StartupPath;
+            openFiDi.Filter = "Solo Ficheros Json (*.json)|*.json";
+            String ruta = @"..\..\JSON\Aministrador.json";
+                
+                JArray jarrayAdmins = JArray.Parse(File.ReadAllText(ruta, Encoding.Default));
+                listaAdministradores = jarrayAdmins.ToObject<List<Administrador>>();   
+        }
+
+        private void ObtencionSuperAdmin()
+        {
+            OpenFileDialog openFiDi = new OpenFileDialog();
+            openFiDi.InitialDirectory = Application.StartupPath;
+            openFiDi.Filter = "Solo Ficheros Json (*.json)|*.json";
+            String ruta = @"..\..\JSON\SuperAdmin.json";
+
+            JObject jobtectPepe = JObject.Parse(File.ReadAllText(ruta, Encoding.Default));
+            pepe = jobtectPepe.ToObject<SuperAdministrador>();
         }
 
         private void LimpiarLogin()
@@ -76,10 +105,7 @@ namespace ProjecteGrup
             labelError.Visible = true;
         }
 
-        public static void AgregarAdministradorLista(BindingList<Administrador> x)
-        {
-            //listaAdministradores = x;
-        }
+        
    
 
         private void checkBoxPassword_Click(object sender, EventArgs e)
@@ -100,6 +126,11 @@ namespace ProjecteGrup
         }
 
         private void checkBoxPassword_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginAdmin_Load(object sender, EventArgs e)
         {
 
         }

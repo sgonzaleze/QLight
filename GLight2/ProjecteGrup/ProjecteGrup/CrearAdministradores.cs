@@ -71,7 +71,6 @@ namespace ProjecteGrup
                 dataGridViewAdmins.DataSource = ListaAdmins;
                 LimpiarFormsAdministrador();
                 GuardarEnJson();
-                //LoginAdmin.AgregarAdministradorLista(ListaAdmins);
             }
 
         }

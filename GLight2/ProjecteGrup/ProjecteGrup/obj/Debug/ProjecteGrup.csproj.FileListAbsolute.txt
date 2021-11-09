@@ -89,3 +89,20 @@ C:\Users\cep.CEPNET0\Desktop\q2\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\Proj
 C:\Users\cep.CEPNET0\Desktop\q2\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.pdb
 C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Josep Guiu\OneDrive\Escritorio\QLight\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\Newtonsoft.Json.xml
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\ProjecteGrup.exe.config
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\ProjecteGrup.exe
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\ProjecteGrup.pdb
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\Newtonsoft.Json.dll
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\bin\Debug\Newtonsoft.Json.xml
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.csproj.AssemblyReference.cache
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.CrearAdministradores.resources
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.JuegoAdmin.resources
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.MenuAdmin.resources
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.LoginAdmin.resources
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.MenuAdminBasico.resources
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.Properties.Resources.resources
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.csproj.GenerateResource.cache
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.csproj.CoreCompileInputs.cache
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.csproj.CopyComplete
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.exe
+C:\Users\cep.CEPNET0\Desktop\Q3\GLight2\ProjecteGrup\ProjecteGrup\obj\Debug\ProjecteGrup.pdb

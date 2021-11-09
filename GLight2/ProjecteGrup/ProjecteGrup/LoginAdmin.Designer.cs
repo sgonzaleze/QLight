@@ -182,6 +182,7 @@ namespace ProjecteGrup
             this.Controls.Add(this.pictureBoxUsuario);
             this.Name = "LoginAdmin";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.LoginAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUsuario)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPassword)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxExclamacion1)).EndInit();
