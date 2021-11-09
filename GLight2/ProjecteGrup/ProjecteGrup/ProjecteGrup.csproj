@@ -111,6 +111,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="JSON\Aministrador.json" />
+    <None Include="JSON\Funk.json" />
+    <None Include="JSON\Heavy.json" />
+    <None Include="JSON\Pop.json" />
+    <None Include="JSON\Rap.json" />
+    <None Include="JSON\Rock.json" />
     <None Include="JSON\SuperAdmin.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

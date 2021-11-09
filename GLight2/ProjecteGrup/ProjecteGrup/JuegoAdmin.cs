@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,17 +15,16 @@ namespace ProjecteGrup
     public partial class JuegoAdmin : Form
     {
         BindingList<Pregunta> generoMusical1 = new BindingList<Pregunta>();
-        
+        BindingList<Pregunta> listaMostrar = new BindingList<Pregunta>();
         public JuegoAdmin()
         {
             InitializeComponent();
+            ObtencionJsons("Rock");
         }
         
         private void buttonModificar_Click(object sender, EventArgs e)
         {
 
-
-   
         }
 
         private void mENUToolStripMenuItem_Click(object sender, EventArgs e)
@@ -86,6 +87,18 @@ namespace ProjecteGrup
 
                 LimpiarFormulario();
             }
+        }
+
+        private void ObtencionJsons(String a)
+        {
+            OpenFileDialog openFiDi = new OpenFileDialog();
+            openFiDi.InitialDirectory = Application.StartupPath;
+            openFiDi.Filter = "Solo Ficheros Json (*.json)|*.json";
+            String ruta = @"..\..\JSON\"+ a +".json";
+
+            JArray jarrayAdmins = JArray.Parse(File.ReadAllText(ruta, Encoding.Default));
+            listaMostrar = jarrayAdmins.ToObject<BindingList<Pregunta>>();
+            dataGridView1.DataSource = listaMostrar;
         }
 
         private void LimpiarFormulario()
@@ -228,6 +241,55 @@ namespace ProjecteGrup
         private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void groupBoxAñadir_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void JuegoAdmin_Load(object sender, EventArgs e)
+        {
+        }
+
+        private void radioButtonHeavy_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonHeavy.Checked == true)
+            {
+                ObtencionJsons(radioButtonHeavy.Text);
+            }
+        }
+
+        private void radioButtonRock_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonRock.Checked == true)
+            {
+                ObtencionJsons(radioButtonRock.Text);
+            }
+        }
+
+        private void radioButtonPop_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonPop.Checked == true)
+            {
+                ObtencionJsons(radioButtonPop.Text);
+            }
+        }
+
+        private void radioButtonRap_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonRap.Checked == true)
+            {
+                ObtencionJsons(radioButtonRap.Text);
+            }
+        }
+
+        private void radioButtonFunk_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioButtonFunk.Checked == true)
+            {
+                ObtencionJsons(radioButtonFunk.Text);
+            }
         }
     }
 }
