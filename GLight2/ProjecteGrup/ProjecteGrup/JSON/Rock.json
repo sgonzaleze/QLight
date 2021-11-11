@@ -1,51 +1,5 @@
 [
   {
-    "PreguntaTexto": "ROCK",
-    "Respuestas": [
-      {
-        "Texto": "ROCK",
-        "IsTrue": true
-      },
-      {
-        "Texto": "ROCK",
-        "IsTrue": false
-      },
-      {
-        "Texto": "ROCK",
-        "IsTrue": false
-      },
-      {
-        "Texto": "ROCK",
-        "IsTrue": false
-      }
-    ],
-    "Dificult": "Easy",
-    "Gender": "ROCK"
-  },
-  {
-    "PreguntaTexto": "«The Dark Side Of The Moon» es el disco Rock más vendido de la historia después de Thriller.",
-    "Respuestas": [
-      {
-        "Texto": "Verdadero",
-        "IsTrue": true
-      },
-      {
-        "Texto": "Falso",
-        "IsTrue": false
-      },
-      {
-        "Texto": "Este disco no existe",
-        "IsTrue": false
-      },
-      {
-        "Texto": "Este disco es del género heavy",
-        "IsTrue": false
-      }
-    ],
-    "Dificult": "Facil",
-    "Gender": "Rock"
-  },
-  {
     "PreguntaTexto": "«Back In Black» es una canción de:",
     "Respuestas": [
       {

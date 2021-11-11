@@ -28,10 +28,10 @@ namespace ProjecteGrup
             openFiDi.Filter = "Solo Ficheros Json (*.json)|*.json";
             String Ruta = @"..\..\JSON\Aministrador.json";
 
-                JArray jarrayAdmins = JArray.Parse(File.ReadAllText(Ruta, Encoding.Default));
-                ListaAdmins = jarrayAdmins.ToObject<BindingList<Administrador>>();
-                dataGridViewAdmins.DataSource = ListaAdmins;
-            
+            JArray jarrayAdmins = JArray.Parse(File.ReadAllText(Ruta, Encoding.Default));
+            ListaAdmins = jarrayAdmins.ToObject<BindingList<Administrador>>();
+            dataGridViewAdmins.DataSource = ListaAdmins;
+
         }
 
         private void GuardarEnJson()
@@ -115,6 +115,42 @@ namespace ProjecteGrup
 
         }
 
-        
+        private void buttonBorrarAdmin_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Quieres borrarlo?", "Mensaje", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+            if (resultado == DialogResult.OK)
+            {
+                Administrador adminBorrar = (Administrador)dataGridViewAdmins.CurrentRow.DataBoundItem;
+                ListaAdmins.Remove(adminBorrar);
+                dataGridViewAdmins.DataSource = ListaAdmins;
+                GuardarEnJson();
+            }
+        }
+
+        private void buttonModificarAdmin_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Quieres modificarlo?", "Mensaje", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+            if (resultado == DialogResult.OK)
+            {
+                Administrador adminModificar = (Administrador)dataGridViewAdmins.CurrentRow.DataBoundItem;
+                ListaAdmins.Remove(adminModificar);
+                dataGridViewAdmins.DataSource = ListaAdmins;                
+
+                String a = adminModificar.Name;
+                String b = adminModificar.Surname;
+                String c = adminModificar.UserName;
+                String d = adminModificar.Password;                
+
+                textBoxNombreAdmin.Text = a;
+                textBoxApellidoAdmin.Text = b;
+                textBoxUserNameAdmin.Text = c;
+                textBoxPasswordAdmin.Text = d;
+                adminModificar.Name = textBoxNombreAdmin.Text;
+                adminModificar.Surname = textBoxApellidoAdmin.Text;
+                adminModificar.UserName = textBoxUserNameAdmin.Text;
+                adminModificar.Password = textBoxPasswordAdmin.Text;
+                GuardarEnJson();
+            }
+        }
     }
 }

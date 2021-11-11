@@ -306,5 +306,17 @@ namespace ProjecteGrup
                 ObtencionJsons(radioButtonFunk.Text);
             }
         }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Quieres borrarlo?", "Mensaje", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+            if (resultado == DialogResult.OK)
+            {
+                Pregunta preguntaBorrar = (Pregunta)dataGridView1.CurrentRow.DataBoundItem;
+                listaMostrar.Remove(preguntaBorrar);
+                dataGridView1.DataSource = listaMostrar;
+                GuardarEnJsonGeneros(preguntaBorrar.Gender);
+            }
+        }
     }
 }
