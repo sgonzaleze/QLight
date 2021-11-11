@@ -92,29 +92,6 @@
     "Gender": "Heavy"
   },
   {
-    "PreguntaTexto": "¿De qué país son originarios los hermanos 'Young' de AC/DC?",
-    "Respuestas": [
-      {
-        "Texto": "Escocia",
-        "IsTrue": true
-      },
-      {
-        "Texto": "Australia",
-        "IsTrue": false
-      },
-      {
-        "Texto": "Inglaterra",
-        "IsTrue": false
-      },
-      {
-        "Texto": "Dinamarca",
-        "IsTrue": false
-      }
-    ],
-    "Dificult": "Medio",
-    "Gender": "Heavy"
-  },
-  {
     "PreguntaTexto": "¿Cómo se llamaba este cuarteto estadounidense antes de ser mundialmente conocido como 'Kiss'?",
     "Respuestas": [
       {
@@ -181,6 +158,29 @@
       }
     ],
     "Dificult": "Facil",
+    "Gender": "Heavy"
+  },
+  {
+    "PreguntaTexto": "¿De qué país son originarios los hermanos 'Young' de AC/DC?",
+    "Respuestas": [
+      {
+        "Texto": "Escocia",
+        "IsTrue": true
+      },
+      {
+        "Texto": "Australia",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Inglaterra",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Dinamarca",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Medio",
     "Gender": "Heavy"
   }
 ]

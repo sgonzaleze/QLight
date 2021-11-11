@@ -33,6 +33,17 @@ namespace ProjecteGrup
                 dataGridView1.DataSource = listaMostrar;
                 String textopregunta = preguntaModificar.PreguntaTexto;
                 textBoxPregunta.Text = textopregunta;
+                if (preguntaModificar.Dificult.Equals(radioButtonFacil.Text))
+                {
+                    radioButtonFacil.Checked = true;
+                }else if (preguntaModificar.Dificult.Equals(radioButtonMedio.Text))
+                {
+                    radioButtonMedio.Checked = true;
+                }
+                else
+                {
+                    radioButtonDificil.Checked = true;
+                }
 
                 foreach (Respuesta item in preguntaModificar.Respuestas)
                 {
