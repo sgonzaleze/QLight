@@ -1,117 +1,25 @@
 [
   {
-    "PreguntaTexto": "«Back In Black» es una canción de:",
+    "PreguntaTexto": "«Back In Black» es una canción de lalalalalallalala:",
     "Respuestas": [
       {
-        "Texto": "Pink Floyd.",
+        "Texto": "a",
+        "IsTrue": false
+      },
+      {
+        "Texto": "a",
         "IsTrue": true
       },
       {
-        "Texto": "The Beatles.",
+        "Texto": "a",
         "IsTrue": false
       },
       {
-        "Texto": "AC/DC",
-        "IsTrue": false
-      },
-      {
-        "Texto": "Black Sabath",
+        "Texto": "a",
         "IsTrue": false
       }
     ],
-    "Dificult": "Medio",
-    "Gender": "Rock"
-  },
-  {
-    "PreguntaTexto": "¿De qué grupo es la canción The Dark Side of the Moon?",
-    "Respuestas": [
-      {
-        "Texto": "AC/DC",
-        "IsTrue": false
-      },
-      {
-        "Texto": "Pink Floyd.",
-        "IsTrue": true
-      },
-      {
-        "Texto": "Queen",
-        "IsTrue": false
-      },
-      {
-        "Texto": "Creedence Revival",
-        "IsTrue": false
-      }
-    ],
-    "Dificult": "Medio",
-    "Gender": "Rock"
-  },
-  {
-    "PreguntaTexto": "<<Call me>> pertenece a Blondie.",
-    "Respuestas": [
-      {
-        "Texto": "Verdadero.",
-        "IsTrue": true
-      },
-      {
-        "Texto": "Falso.",
-        "IsTrue": false
-      },
-      {
-        "Texto": "No existe",
-        "IsTrue": false
-      },
-      {
-        "Texto": "És una cooperación con ACDC",
-        "IsTrue": false
-      }
-    ],
-    "Dificult": "Medio",
-    "Gender": "Rock"
-  },
-  {
-    "PreguntaTexto": "El primer vocalista de Black Sabbath fue Dave walker.",
-    "Respuestas": [
-      {
-        "Texto": "Verdadero",
-        "IsTrue": false
-      },
-      {
-        "Texto": "Falso",
-        "IsTrue": true
-      },
-      {
-        "Texto": "Fue Martin Spring",
-        "IsTrue": false
-      },
-      {
-        "Texto": "Eran dos",
-        "IsTrue": false
-      }
-    ],
-    "Dificult": "Medio",
-    "Gender": "Rock"
-  },
-  {
-    "PreguntaTexto": "Johnny B. Goode es una canción de:",
-    "Respuestas": [
-      {
-        "Texto": "Chuck Berry",
-        "IsTrue": true
-      },
-      {
-        "Texto": "Elvis Presley.",
-        "IsTrue": false
-      },
-      {
-        "Texto": "Berry Chuckie",
-        "IsTrue": false
-      },
-      {
-        "Texto": "Rose Mary",
-        "IsTrue": false
-      }
-    ],
-    "Dificult": "Medio",
+    "Dificult": "Facil",
     "Gender": "Rock"
   },
   {
@@ -134,7 +42,53 @@
         "IsTrue": false
       }
     ],
-    "Dificult": "Medio",
+    "Dificult": "Facil",
+    "Gender": "Rock"
+  },
+  {
+    "PreguntaTexto": "Johnny B. Goode es una canción de:",
+    "Respuestas": [
+      {
+        "Texto": "Chuck Berry",
+        "IsTrue": true
+      },
+      {
+        "Texto": "Elvis Presley.",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Berry Chuckie",
+        "IsTrue": false
+      },
+      {
+        "Texto": "Rose Mary",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Facil",
+    "Gender": "Rock"
+  },
+  {
+    "PreguntaTexto": "aaaaa",
+    "Respuestas": [
+      {
+        "Texto": "si",
+        "IsTrue": true
+      },
+      {
+        "Texto": "no",
+        "IsTrue": false
+      },
+      {
+        "Texto": "",
+        "IsTrue": false
+      },
+      {
+        "Texto": "",
+        "IsTrue": false
+      }
+    ],
+    "Dificult": "Facil",
     "Gender": "Rock"
   }
 ]

@@ -24,7 +24,59 @@ namespace ProjecteGrup
         
         private void buttonModificar_Click(object sender, EventArgs e)
         {
+            DialogResult resultado = MessageBox.Show("Quieres modificarlo?", "Mensaje", MessageBoxButtons.OKCancel, MessageBoxIcon.Exclamation);
+            if (resultado == DialogResult.OK)
+            {
+                Pregunta preguntaModificar = (Pregunta)dataGridView1.CurrentRow.DataBoundItem;
+                List<Respuesta> respuestasModificar = new List<Respuesta>();
+                listaMostrar.Remove(preguntaModificar);
+                dataGridView1.DataSource = listaMostrar;
+                String textopregunta = preguntaModificar.PreguntaTexto;
+                textBoxPregunta.Text = textopregunta;
 
+                foreach (Respuesta item in preguntaModificar.Respuestas)
+                {
+                    respuestasModificar.Add(item);
+                }
+
+                textBoxResposta1.Text = respuestasModificar[0].Texto;
+                if (respuestasModificar[0].IsTrue == true)
+                {
+                    radioButtonCiertoPrimero.Checked = true;
+                }
+                else {
+                    radioButtonFalsoPrimero.Checked = true;
+                }
+                textBoxResposta2.Text = respuestasModificar[1].Texto;
+                if (respuestasModificar[1].IsTrue == true)
+                {
+                    radioButtonCiertoSegundo.Checked = true;
+                }
+                else
+                {
+                    radioButtonFalsoSegundo.Checked = true;
+                }
+                textBoxResposta3.Text = respuestasModificar[2].Texto;
+                if (respuestasModificar[2].IsTrue == true)
+                {
+                    radioButtonCiertoTercero.Checked = true;
+                }
+                else
+                {
+                    radioButtonFalsoTercero.Checked = true;
+                }
+                textBoxResposta4.Text = respuestasModificar[3].Texto;
+                if (respuestasModificar[3].IsTrue == true)
+                {
+                    radioButtonCiertoCuarto.Checked = true;
+                }
+                else
+                {
+                    radioButtonFalsoCuarto.Checked = true;
+                }
+
+                GuardarEnJsonGeneros(preguntaModificar.Gender);
+            }
         }
 
         private void mENUToolStripMenuItem_Click(object sender, EventArgs e)
@@ -318,5 +370,7 @@ namespace ProjecteGrup
                 GuardarEnJsonGeneros(preguntaBorrar.Gender);
             }
         }
+
+
     }
 }

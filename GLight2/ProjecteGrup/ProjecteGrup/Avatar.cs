@@ -9,8 +9,7 @@ namespace ProjecteGrup
     class Avatar
     {
         public String Gender { get; set; }
-        public int PuntuacionMinima { get; set; }
-        public int PuntuaciónMaxima { get; set; }
+        public int Puntuacion { get; set; }
         
     }
 }
